@@ -1,0 +1,51 @@
+.SendPresentation
+	&_title
+		margin-bottom 5px
+		margin-left 7px
+		font-size 16px
+		line-height 1.69
+		
+		@media $smPlus
+			margin-left 0
+	
+	&_item
+		margin-bottom 13px
+		
+		@media $smPlus
+			display flex
+	
+	&_input
+		font-size 14px
+		+placeholder()
+			color #B2B5B9
+	
+	&_btn
+		flex-shrink 0
+		width 50px
+		height 50px
+		border none
+		border-top-right-radius 2px
+		border-bottom-right-radius 2px
+		background $blue
+		color $white
+		
+		& > .SvgIco
+			width 14px
+			transform rotate(180deg)
+		
+		@media $xs
+			display none
+	
+	&_note
+		font-size 11px
+		line-height 1.64
+		
+		@media $smPlus
+			margin-right 10px
+	
+	&_link
+		text-decoration underline
+		@extend .transition
+		
+		&:hover
+			color $blue

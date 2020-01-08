@@ -1,0 +1,23 @@
+.ObjectCard.SearchResults_item
+	a(href="/object.html").ObjectCard_link
+	.ObjectCard_img
+		.ProportionalImage.ProportionalImage-objectCard(style="background-image: url('img/object_card.jpg')")
+		.ObjectCard_icon
+			include ../svg/SvgIco/building_types/agriculture
+	.ObjectCard_body
+		.ObjectCard_text
+			.ObjectCard_id-and-square
+				.ObjectCard_id.
+					#[span.ObjectCard_label.hidden-smPlus ID:] 210
+				.ObjectCard_square.hidden-smPlus.
+					#[span.ObjectCard_label.hidden-smPlus Площадь:] 4,76 Га
+			.ObjectCard_location Киевское шоссе, Жедочи, #[br.hidden-xs]35 км от МКАД
+			.ObjectCard_square.hidden-xs 4,76 #[span.ObjectCard_label.hidden-smPlus Га]
+			.ObjectCard_cost.
+				#[span.ObjectCard_label.hidden-smPlus Стоимость:] 119 000 000 руб
+			.ObjectCard_specialPrice.
+				#[span.ObjectCard_label.hidden-smPlus Спец. цена:] 110 000 000 руб
+		.ObjectCard_links
+			.ObjectCard_mapLinkWrap
+				a(href="#").Link.Link-blue.ShowOnMap Показать на карте
+			a(href="javascript:;", data-fancybox, data-src="#GetBetterConditions").BtnDefault.BtnDefault-objectCard.ObjectCard_btn.PopupBetterConditionsLink Получить лучшие условия

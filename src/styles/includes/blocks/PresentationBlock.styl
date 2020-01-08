@@ -1,0 +1,28 @@
+.PresentationBlock
+	width 290px
+	
+	@media $smPlus
+		display flex
+		flex-direction row-reverse
+		justify-content space-between
+		align-items center
+		width auto
+		padding 0 34px
+	
+	@media $mdPlus
+		justify-content flex-end
+		padding 0
+	
+	&_downloadBtn
+		margin-bottom 24px
+		
+		@media $smPlus
+			margin-top 8px
+	
+	&_form
+		@media $smPlus
+			width 280px
+			margin-right 50px
+		
+		@media $mdPlus
+			margin-right 59px

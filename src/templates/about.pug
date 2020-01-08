@@ -1,0 +1,112 @@
+extends /layouts/main_layout
+block vars
+	- var title = "О компании";
+	- var headerBg = "bg_header_page_about.jpg";
+block content
+	.Breadcrumbs.hidden-xs
+		.Container
+			ul.Breadcrumbs_list
+				li.Breadcrumbs_item
+					a(href="/").Breadcrumbs_link Главная
+				li.Breadcrumbs_item
+					span.Breadcrumbs_itemText #{title}
+	.AboutCompany
+		.PageDescription.PageDescription-pageAbout
+			.Container.PageDescription_container
+				.PageDescription_text.
+					Компания Land Management профессиональный брокер и опытный эксперт земельного рынка Москвы и Московской области, компетентный консультант по продаже земли, с целью ее дальнейшего освоения и развития, возведения жилых, промышленных объектов, ведения деятельности сельскохозяйственного направления.
+		.ActivitiesSection
+			.Container
+				h2.ActivitiesSection_title Основные направления деятельности
+				.Swiper.Swiper-activities.swiper-container
+					.swiper-wrapper
+						.Swiper_slide.swiper-slide
+							.Activity.Swiper_activity
+								.Activity_icon
+									include includes/svg/SvgIco/activities/land_asset_management
+								.Activity_description комплексное управление земельными активами, их развитие с целью дальнейшей капитализации стоимости земельных участков в Подмосковье
+						.Swiper_slide.swiper-slide
+							.Activity.Swiper_activity
+								.Activity_icon
+									include includes/svg/SvgIco/activities/legal_services
+								.Activity_description юридические услуги: правовая экспертиза участков и объектов недвижимости
+						.Swiper_slide.swiper-slide
+							.Activity.Swiper_activity
+								.Activity_icon
+									include includes/svg/SvgIco/activities/legal_support
+								.Activity_description юридическое сопровождение продажи земли, представительство интересов заказчика в Росреестре, Кадастровой палате и др
+						.Swiper_slide.swiper-slide
+							.Activity.Swiper_activity
+								.Activity_icon
+									include includes/svg/SvgIco/activities/rendering_geodetic_services
+								.Activity_description оказание геодезических услуг
+						.Swiper_slide.swiper-slide
+							.Activity.Swiper_activity
+								.Activity_icon
+									include includes/svg/SvgIco/activities/land_development
+								.Activity_description лэнд-девелопмент, широкий спектр консультаций – аналитика, оценка земельных участков
+					button(type="button").SwiperArrow.SwiperArrow-lightgrey.Swiper_prev.hidden-mdPlus
+						include includes/svg/SvgIco/arrow_left
+					button(type="button").SwiperArrow.SwiperArrow-lightgrey.Swiper_next.hidden-mdPlus
+						include includes/svg/SvgIco/arrow_right
+		.Container
+			.AboutCompany_text
+				p.hidden-xs #[strong Land Management] – инновационная компания, осуществляющая продажу земли на основе эффективных современных технологий. Мы управляем уникальным портфелем активов, в том числе инвестиционных проектов: индустриальный парк «Петровское» по Киевскому шоссе и индустриальный парк «М4» по Каширскому шоссе. Их развитие производится усилиями структурных подразделений нашей компании, в которых работают высококлассные специалисты.
+				p #[strong Наша команда] – высококвалифицированные опытные сотрудники в различных сферах и направлениях лэнд-девелопмента, обладающие более чем 10-ти летним стажем работы в соответствующем сегменте рынка, в том числе в крупнейших компаниях, землевладельческих и консалтинговых, отечественных и международных. Мы всегда в курсе последних изменений в законодательстве, текущей ситуации на рынке. В том, что касается продажи земли, для нашей компании не существует секретов!
+				p #[span.Semibold Каждый проект или услуга, реализуемая Land Management – это качественный продукт для потребителя.]
+		.KeyBenefits
+			.Container
+				h2.KeyBenefits_title.Semibold Ключевые преимущества:
+				.Swiper.Swiper-keyBenefits.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							.KeyBenefits_item.Semibold Широкий спектр дополнительных услуг
+						.swiper-slide
+							.KeyBenefits_item.Semibold Широкий спектр дополнительных услуг
+						.swiper-slide
+							.KeyBenefits_item.Semibold Широкий спектр дополнительных услуг
+						.swiper-slide
+							.KeyBenefits_item.Semibold Широкий спектр дополнительных услуг
+					.Swiper_pagination
+					button(type="button").SwiperArrow.Swiper_prev.hidden-xs
+						include includes/svg/SvgIco/arrow_left
+					button(type="button").SwiperArrow.Swiper_next.hidden-xs
+						include includes/svg/SvgIco/arrow_right
+		.PartnersSection
+			.Container
+				h2.PartnersSection_title.Semibold Клиенты и партнеры компании
+				.PartnersSection_description Активы Land Management требуют высочайшего уровня профессионализма всех участников процесса. Мы формируем партнерский пул, как ключевой элемент успеха проекта, сотрудничаем с большим числом крупных землевладельцев, а также инвестиционными, инжиниринговыми, строительными компаниями и частными инвесторами.
+				.PartnersSection_partners
+					.Partner.PartnersSection_partner
+						.Partner_logo
+							img(src="img/partners/mr_group.png", alt="MR Group")
+						.Partner_description MR Group – крупный девелопер, работающий на рынке недвижимости Москвы и Сочи более 15 лет. За время своей работы компания приобрела солидный опыт работы с инвестиционными проектами в сфере строительства, заняла лидирующее положение на рынке; девелопмента Москвы и Сочи, зарекомендовав себя как надежный партнер.
+						a(href="#").Partner_moreText.hidden-mdPlus
+							span.ArrowCircle
+					.Partner.PartnersSection_partner
+						.Partner_logo
+							img(src="img/partners/bella.png", alt="Bella")
+						.Partner_description TZMO S.A –ведущий европейский производитель и поставщик изделий медицинского назначения, гигиенических и косметических средств на глобальный рынок. Bella является лидером продаж на польском рынке гигиенических изделий для женщин. Благодаря опыту и современными технологиями, которые позволяют производить продукты, соответствующие требованиям рынка, количество потребителей продукции под торговой маркой Bella постоянно увеличивается.
+						a(href="#").Partner_moreText.hidden-mdPlus
+							span.ArrowCircle
+					.Partner.PartnersSection_partner
+						.Partner_logo
+							img(src="img/partners/tebodin.png", alt="Tebodin")
+						.Partner_description Компания Тебодин Россия является одной из первых крупных западных инжиниринговых и консалтинговых компаний в России. Используя новейшие инженерные технологии, Тебодин предлагает международным и российским клиентам полный спектр проектных и консалтинговых услуг. Опыт компании, индивидуальный подход к каждому клиенту и проекту, нестандартные творческие решения обеспечивают полное соблюдение интересов клиента и успешную реализацию проектов.
+						a(href="#").Partner_moreText.hidden-mdPlus
+							span.ArrowCircle
+					.Partner.PartnersSection_partner
+						.Partner_logo
+							img(src="img/partners/knight_frank.png", alt="Knight Frank")
+						.Partner_description Основанная в Лондоне более века назад, компания Knight Frank является признанным лидером на международном рынке недвижимости. За 23 года работы в России Knight Frank стала ведущей компанией на рынках офисной, складской, торговой и жилой недвижимости. Персонал Knight Frank — это профессиональные консультанты в различных областях недвижимости, таких как сдача в аренду и продажа объектов, подбор объектов, привлечение инвестиций, стратегический консалтинг, оценка, исследования рынка, маркетинг и продвижение проектов, управление недвижимостью и активами и др. Knight Frank является членом таких профессиональных организаций, как Американская Торговая Палата (Москва), Ассоциация Европейского Бизнеса в России, Российский совет торговых центров, Гильдия управляющих и девелоперов (Санкт-Петербург), Ассоциация российских магистров оценки АРМО и др.
+						a(href="#").Partner_moreText.hidden-mdPlus
+							span.ArrowCircle
+					.Partner.PartnersSection_partner
+						.Partner_logo
+							img(src="img/partners/geoexpress.png", alt="ГЭО Экспресс")
+						.Partner_description ООО «ГеоЭкспресс» рад предложить Вам различные виды услуг в области геодезии и картографии, которые необходимы для достижения Ваших целей, связанных со строительством, исследованием территорий или оформлении земельных участков. Наши специалисты выполнят весь спектр задач по межеванию территории, топографической съемке любых масштабов, инженерной подготовке для строительства и геометрическому обеспечению строительно-монтажных работ.
+						a(href="#").Partner_moreText.hidden-mdPlus
+							span.ArrowCircle
+
+block page_bottom
+	script(src="/js/about.js")

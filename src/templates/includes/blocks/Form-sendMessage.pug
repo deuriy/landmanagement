@@ -1,0 +1,35 @@
+form(action="/ajax/form-response.json", style="display: none;").Form.Form-sendMessage.Form-popup.Form-sendMessagePopup#SendMessage
+	h2.Form_title Отправить сообщение
+	.Form_wrapper
+		.Form_items
+			.Form_item.Form_item-name
+				label(for="name2").FormLabel.Form_label Имя
+				input(type="text", name="name", id="name2", autocomplete="nope").FormText.Form_text
+			.Form_emailAndPhone
+				.Form_item.Form_item-email
+					label(for="email").FormLabel.Form_label Электронный адрес*
+					input(type="email", name="email", id="email", required, autocomplete="nope").FormText.Form_text
+				.Form_item.Form_item-phone
+					label(for="tel2").FormLabel.Form_label Номер телефона
+					input(type="tel", name="tel", id="tel2").FormText.Form_text
+		.Form_messageAndFile
+			.Form_item.Form_item-message
+				label(for="message").FormLabel.Form_label Сообщение*
+				textarea(name="message", id="message", required).FormTextarea.FormTextarea-attachFile
+				.FileUpload.Form_fileUpload.hidden-xs
+					.FileUpload_control
+						input(type="file", name="attach_doc", id="attach_doc").FileUpload_input
+						label(for="attach_doc").FileUpload_label
+							include ../svg/SvgIco/attachment
+							span.FileUpload_labelText Прикрепите документ, если нужно
+					.FileUpload_result
+						span.FileUpload_filename
+						a(href="#").FileUpload_delete
+							include ../svg/SvgIco/close
+		.Form_agreementAndActions
+			.Form_agreement
+				.Checkbox.Checkbox-agreement
+					input(type="checkbox", name="agreement", id="agreement2", required).Checkbox_input
+					label(for="agreement2").Checkbox_label Согласен с условиями обработки персональных данных
+			.Form_actions
+				button(type="submit").BtnBlue.BtnBlue-block Отправить

@@ -1,0 +1,27 @@
+.Switch
+	position relative
+	width 32px
+	height 19px
+	border-radius 9.5px
+	background $blue
+	font-size 30px
+	cursor pointer
+	outline none
+	appearance none
+	@extend .transition
+	
+	&:after
+		content ""
+		position absolute
+		top 0
+		bottom 0
+		left 3px
+		width 13px
+		height 13px
+		margin auto
+		border-radius 50%
+		background $white
+		@extend .transition
+	
+	&:checked:after
+		left calc(100% - 16px)

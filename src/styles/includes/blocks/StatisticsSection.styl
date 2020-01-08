@@ -1,0 +1,116 @@
+.StatisticsSection
+	padding-top 40px
+	padding-bottom 52px
+	text-align center
+	
+	@media $smPlus
+		padding-bottom 76px
+	
+	@media $mdPlus
+		padding-top 110px
+		padding-bottom 174px
+	
+	&_container
+		@media $sm
+			padding-right 17px
+			padding-left 17px
+	
+	&_title
+		width 13em
+		max-width 100%
+		margin 0 auto -23px
+		background $blue
+		color $white
+		font-weight 600
+		font-size 20px
+		line-height 2.25
+		
+		@media $smPlus
+			width 13.7334em
+			margin-bottom -39px
+			font-size 30px
+			line-height 2.84
+		
+		@media $mdPlus
+			width 14.625em
+			font-size 40px
+			line-height 2.25
+	
+	&_items
+		padding-top 22px
+		padding-bottom 29px
+		border 1px solid $blue
+		
+		@media $smPlus
+			display flex
+			padding-top 62px
+			padding-bottom 27px
+		
+		@media $mdPlus
+			padding 56px 95px 32px
+	
+	&_item
+		padding-top 10px
+		line-height normal
+		
+		&:not(:last-child):after
+			content ""
+			display block
+			width 156px
+			height 1px
+			margin-top 30px
+			margin-right auto
+			margin-left auto
+			background $blue
+			
+			@media $smPlus
+				position absolute
+				top -14px
+				right 0
+				bottom 0
+				width 1px
+				height 155px
+				margin auto
+			
+			@media $mdPlus
+				top 24px
+		
+		&:first-child
+			@media $smPlus
+				padding-right 25px
+				
+				&:after
+					right 13px
+		
+		&:nth-child(2):after
+			right -14px
+		
+		&:last-child
+			@media $smPlus
+				padding-left 25px
+		
+		@media $smPlus
+			position relative
+			flex 1 0 0
+			padding-bottom 40px
+	
+	&_number
+		font-weight 300
+		font-size 70px
+		line-height 1.38
+		
+		@media $smPlus
+			margin-bottom 2px
+			font-size 80px
+			line-height 1.375
+		
+		@media $mdPlus
+			margin-bottom -8px
+			font-size 120px
+	
+	&_label
+		font-weight 600
+		font-size 18px
+		
+		@media $smPlus
+			font-size 16px

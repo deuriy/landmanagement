@@ -1,0 +1,76 @@
+.ServicesTypes
+	padding-top 20px
+	padding-bottom 22px
+	background $white
+	
+	@media $smPlus
+		padding-top 60px
+		padding-bottom 50px
+	
+	@media $mdPlus
+		padding-top 50px
+	
+	&_container
+		@media $smPlus
+			display flex
+			flex-wrap wrap
+			justify-content space-between
+			max-width 653px
+		
+		@media $lgPlus
+			max-width 1250px
+	
+	&_item
+		margin-right auto
+		margin-left auto
+		
+		@media $smPlus
+			flex-basis 274px
+			margin-right 0
+			margin-left 0
+		
+		&:not(:last-child)
+			margin-bottom 15px
+			
+			@media $smPlus
+				margin-bottom 25px
+			
+			@media $lgPlus
+				margin-bottom 0
+		
+		&:nth-last-child(2)
+			@media $smPlus
+				margin-bottom 0
+	
+	&-servicePage
+		padding-bottom 50px
+		
+		@media $smPlus
+			padding-top 62px
+			padding-bottom 70px
+		
+		@media $mdPlus
+			padding-top 60px
+			padding-bottom 100px
+		
+		.ServicesTypes_container
+			@media $smPlus
+				max-width 1250px
+				flex-wrap nowrap
+			
+			@media $mdPlus
+				justify-content flex-start
+		
+		.ServicesTypes_item
+			@media $smPlus
+				flex-grow 1
+				margin-bottom 0
+				
+				&:not(:last-child)
+					margin-right 20px
+			
+			@media $mdPlus
+				flex-grow 0
+				
+				&:not(:last-child)
+					margin-right 25px

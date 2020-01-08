@@ -1,0 +1,133 @@
+.ObjectCard
+	position relative
+	display flex
+	flex-direction column
+	width 300px
+	max-width 100%
+	border 1px solid #e5e8ee
+	border-radius 2px
+	background $white
+	@extend .transition
+	
+	&:hover
+		box-shadow none
+	
+	@media $smPlus
+		flex-direction row
+		width 748px
+		box-shadow 0 15px 30px 0 rgba(0, 0, 0, 0.1)
+	
+	@media $mdPlus
+		width 740px
+	
+	&_link
+		position absolute
+		z-index 1
+		top 0
+		right 0
+		bottom 0
+		left 0
+	
+	&_img
+		position relative
+		
+		@media $smPlus
+			flex-basis 190px
+			flex-shrink 0
+	
+	&_icon
+		position absolute
+		top 0
+		left 0
+		display flex
+		justify-content center
+		align-items center
+		width 40px
+		height 40px
+		border-radius 2px
+		background $blue
+		color $white
+	
+	&_body
+		padding 10px 14px 20px
+		font-size 14px
+		line-height 1.93
+		
+		@media $smPlus
+			flex-grow 1
+			padding 14px 29px 10px 19px
+		
+		@media $mdPlus
+			padding-top 13px
+			padding-right 9px
+			padding-left 20px
+	
+	&_text
+		@media $smPlus
+			display flex
+			justify-content space-between
+			min-height 75px
+		
+		@media $mdPlus
+			min-height 85px
+	
+	&_id-and-square
+		display flex
+		justify-content space-between
+		margin-bottom 10px
+	
+	&_location
+		margin-bottom 15px
+		line-height 1.43
+		
+		@media $smPlus
+			flex-basis 113px
+		
+		@media $mdPlus
+			margin-left -12px
+	
+	&_square
+		@media $smPlus
+			flex-basis 27px
+		
+		@media $mdPlus
+			flex-basis 30px
+	
+	&_cost
+		@media $smPlus
+			flex-basis 108px
+	
+	&_specialPrice
+		margin-bottom 16px
+		font-weight bold
+		
+		@media $smPlus
+			flex-basis 110px
+		
+		@media $mdPlus
+			margin-right 10px
+	
+	&_links
+		@media $smPlus
+			display flex
+			justify-content space-between
+			align-items center
+			margin-left 54px
+		
+		@media $mdPlus
+			margin-left 47px
+	
+	&_mapLinkWrap
+		position relative
+		z-index 1
+		margin-bottom 14px
+		padding-right 3px
+		text-align center
+		
+		@media $smPlus
+			margin-bottom 0
+			padding-right 0
+	
+	&_btn
+		position relative
+		z-index 1

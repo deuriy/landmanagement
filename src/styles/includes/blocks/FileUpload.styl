@@ -1,0 +1,34 @@
+.FileUpload
+	display flex
+	align-items center
+	font-size 16px
+	
+	&_input
+		position absolute
+		clip rect(0, 0, 0, 0)
+	
+	&_label
+		display flex
+		align-items center
+		height 16px
+		color $grey
+		@extend .transition
+		
+		& > .SvgIco
+			margin-right 12px
+		
+		&:hover
+			color $blue
+	
+	&_labelText
+		text-decoration underline
+	
+	&_result
+		display flex
+		height 16px
+		color $grey
+	
+	&_delete
+		display none
+		width 12px
+		margin-left 10px

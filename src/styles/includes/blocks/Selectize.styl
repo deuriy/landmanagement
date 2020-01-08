@@ -1,0 +1,106 @@
+.selectize-control
+	height 50px
+	
+.selectize-input
+	display block
+	padding 15px 35px 15px 15px
+	border-color #CDCFD3
+	border-radius 2px
+	box-shadow none
+	@extend .transition
+	
+	&:after
+		@extend .transition
+	
+	&.focus
+		box-shadow none
+	
+	&.dropdown-active
+		border-radius 0
+
+.selectize-dropdown, .selectize-input, .selectize-input input
+	font-size 14px
+	color $dark
+
+.selectize-dropdown
+	padding-right 23px
+	border none
+	box-shadow 10px 10px 40px 0 rgba(48, 56, 92, 0.1)
+	
+	.option
+		padding 10px 15px 9px
+		cursor pointer
+	
+	.active
+		background-color #F4F6FA
+
+.selectize-dropdown-content
+	max-height 203px
+	padding-right 6px
+	
+	&::-webkit-scrollbar
+		width 2px
+ 
+	&::-webkit-scrollbar-thumb
+		background $blue
+		border-radius 1px
+
+	&::-webkit-scrollbar-track
+		margin-top 11px
+		margin-bottom 11px
+		background #ebedf1
+
+.selectize-control.single
+	.selectize-input:after
+		right 12px
+		margin-top -4px
+		width 14px
+		height 8px
+		border none
+		background url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSI4Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMzMEE2REYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMSAxbDYgNiA2LTYiLz48L3N2Zz4=') 0 0 no-repeat
+		
+	.selectize-input.input-active
+		border-color transparent
+		background $blue
+		color $white
+		
+		input
+			color $white
+			
+			+placeholder()
+				color $white
+				opacity 0.51
+		
+		&:after
+			transform rotate(180deg)
+			background-image url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSI4Ij48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMSAxbDYgNiA2LTYiLz48L3N2Zz4=')
+	
+	&:focus
+		outline 1px solid $blue
+		
+		.selectize-input
+			border-color transparent
+
+.Select.selectize-control.single
+	.selectize-dropdown, .selectize-input, .selectize-input input
+		font-size 16px
+	
+	.selectize-input
+		padding-right 27px
+		
+		&:after
+			right 13px
+		
+	.selectize-input.input-active
+		&, input
+			cursor pointer
+
+.Select
+	&-dateTime
+		width 135px
+		
+		.selectize-dropdown
+			padding-right 12px
+		
+		.selectize-dropdown-content
+			max-height 140px

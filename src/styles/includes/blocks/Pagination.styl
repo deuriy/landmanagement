@@ -1,0 +1,42 @@
+.Pagination	
+	&_list
+		display flex
+		justify-content center
+		align-items center
+	
+	&_item
+		margin-right 50px
+		
+		&-prev, &-next
+			.SvgIco
+				width 14px
+		
+		&-prev
+			margin-right 31px
+			
+			.SvgIco
+				transform rotate(90deg)
+		
+		&-next
+			margin-right 0
+			margin-left -14px
+			
+			.SvgIco
+				transform rotate(-90deg)
+		
+		&-dots
+			margin-right 42px
+			
+			&:after
+				content "…"
+				display inline-block
+				margin-left -3px
+	
+	&_link
+		display block
+		font-size 14px
+		color $grey
+		@extend .transition
+		
+		&:hover
+			color $blue

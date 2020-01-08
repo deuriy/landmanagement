@@ -1,0 +1,183 @@
+.Header
+	position relative
+	z-index 100
+	height 270px
+	background-position 70.3% 0
+	background-size cover
+	background-repeat no-repeat
+	
+	@media print
+		display none !important
+	
+	@media $smPlus
+		height 320px
+		background-position 77.9% 0
+		background-size auto 128.9%
+	
+	@media $lgPlus
+		height 451px
+		background-position center 0
+		background-size cover
+	
+	@media $xl
+		background-position center center
+	
+	&_container
+		z-index 1
+		display flex
+		flex-direction column
+		justify-content flex-end
+		height inherit
+		padding-top 18px
+		padding-bottom 25px
+		
+		@media $smPlus
+			padding-top 25px
+			padding-bottom 49px
+		
+		@media $lgPlus
+			justify-content space-between
+			padding-top 24px
+			padding-bottom 75px
+	
+	&_top
+		display flex
+		justify-content space-between
+		align-items center
+		padding-right 15px
+		padding-left 15px
+		transition top .2s ease-in-out
+		
+		@media $smPlus
+			padding-top 25px
+			padding-right 40px
+			padding-left 40px
+		
+		@media $lgPlus
+			padding-top 0
+			padding-right 0
+			padding-left 0
+		
+		&-sticky
+			position absolute
+			z-index 100
+			top 0
+			left 0
+			width 100%
+			height 72px
+	
+		&-fixed
+			position fixed
+			background $dark
+			
+			.Header_mainMenu
+				@media $smPlus
+					margin-right 22px
+			
+			.Header_phone
+				@media $smPlus
+					margin-top 0
+					margin-right 23px
+			
+			.Header_menuHamburger
+				@media $smPlus
+					margin-top 0
+			
+			@media $smPlus
+				padding-top 0
+				padding-right 40px
+				padding-left 40px
+		
+		&-fixedTop
+			top -72px
+	
+	&_topRight
+		display flex
+		align-items center
+		margin-top -2px
+		
+		@media $smPlus
+			margin-top 0
+	
+	&_mainMenu
+		margin-top -2px
+		margin-right 20px
+		
+		@media $smPlus
+			margin-top 0
+			margin-right 20px
+		
+		@media $lgPlus
+			margin-top 1px
+			margin-right 68px
+	
+	&_phone
+		margin-top 2px
+		margin-right 24px
+		
+		@media $smPlus
+			margin-top 4px
+			margin-right 25px
+		
+		@media $lgPlus
+			margin-top 0
+			margin-right 0
+	
+	&_menuHamburger
+		flex-grow 0
+		flex-shrink 0
+		
+		@media $smPlus
+			margin-top 3px
+	
+	&_mobileNavigation
+		display none
+	
+	&-frontpage
+		height 460px
+		background-position 50% 0
+		
+		.Header_container
+			justify-content flex-start
+		
+		.Header_bottom
+			display flex
+			justify-content center
+			align-items center
+			flex 1 0 auto
+		
+		.Header_siteInfo
+			margin-top 30px
+			
+			@media $smPlus
+				margin-top 42px
+			
+			@media $lgPlus
+				margin-top 103px
+		
+		@media $smPlus
+			height 960px
+			background-size auto 100%
+		
+		@media $xl
+			background-size cover
+			background-position center center
+	
+	&-servicesPage
+		background-position 30% 0
+		
+		@media $smPlus
+			background-size auto 100%
+			background-position 17% 0
+		
+		@media $lgPlus
+			background-position center 0
+		
+		@media $xl
+			background-size cover
+			background-position center center
+	
+	&-projectPage
+		.Header_container
+			@media $xs
+				padding-bottom 37px

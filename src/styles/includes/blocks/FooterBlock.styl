@@ -1,0 +1,43 @@
+.FooterBlock
+	font-size 16px
+	color #C4C4C4
+	
+	&_title
+		margin-bottom 21px
+		font-weight bold
+		line-height 1.69
+		text-transform uppercase
+	
+	&_item
+		margin-bottom 14px
+		
+		&:last-child
+			margin-bottom 0
+	
+	&_link
+		font-size 16px
+		line-height 1.375
+		color #7E7E7E
+		@extend .transition
+		
+		&:hover
+			color #C4C4C4
+	
+	&-contacts
+		.FooterBlock_title
+			margin-bottom 9px
+			
+			@media $lgPlus
+				margin-bottom 20px
+			
+		.FooterBlock_link
+			color #C4C4C4
+			
+			&:hover
+				color $white
+		
+			@media $lgPlus
+				color #7E7E7E
+				
+				&:hover
+					color #C4C4C4

@@ -1,0 +1,114 @@
+.Tabs
+	overflow hidden
+	
+	&_listWrapper
+		position relative
+		height 70px
+		margin-bottom 27px
+		overflow-x auto
+		
+		@media $smPlus
+			margin-bottom 40px
+	
+		&:before
+			content ""
+			position absolute
+			right 0
+			bottom 0
+			left 0
+			height 1px
+			background $lightgrey
+	
+	&_list
+		display flex
+	
+	&_item
+		margin-right 20px
+		
+		@media $smPlus
+			margin-right 16px
+		
+		&:last-child
+			margin-right 0
+			
+			.Tabs_link
+				padding-right 10px
+		
+		&-active
+			.Tabs_link
+				color $dark
+	
+	&_link
+		display block
+		padding 22px 0
+		font-weight 600
+		line-height 1.63
+		white-space nowrap
+		color $grey
+		@extend .transition
+		
+		@media $smPlus
+			padding-right 20px
+			padding-left 20px
+	
+	&_underline
+		position absolute
+		bottom 0
+		left 0
+		width 108px
+		height 2px
+		background $blue
+		@extend .transition
+		
+		@media $smPlus
+			width 151px
+	
+	&_content
+		&:not(:first-child)
+			display none
+			
+		&, & > p
+			font-size 14px
+			line-height 1.86
+			
+			@media $smPlus
+				font-size 16px
+				line-height 1.63
+		
+		& > p
+			&:not(:last-child)
+				margin-bottom 20px
+				
+				@media $smPlus
+					margin-bottom 20px
+				
+				@media $mdPlus
+					margin-bottom 45px
+	
+	&-project
+		margin-right -15px
+		
+		.Tabs_listWrapper
+			margin-left 5px
+			
+			@media $smPlus
+				margin-left 0
+		
+		.Tabs_container
+			margin-right 15px
+			
+			@media $smPlus
+				margin-right 40px
+				padding-left 20px
+			
+			@media $mdPlus
+				margin-right 0
+				padding-left 0
+		
+		@media $smPlus
+			margin-right -40px
+			margin-left -20px
+		
+		@media $mdPlus
+			margin-right 0
+			margin-left 0

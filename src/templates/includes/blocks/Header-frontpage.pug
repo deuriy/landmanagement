@@ -1,0 +1,32 @@
+header.Header.Header-frontpage(style="background-image: url('img/header/" + headerBg +"')")
+	.Container.Header_container
+		.Header_top.hidden-mdMinus
+			.Header_topLeft
+				a(href="/", title="На главную").Logo.Header_logo
+					img(src="img/logo.svg", alt="Логотип").Logo_img
+					span.Logo_text.
+						Land #[br]Management
+			.Header_topRight
+				include MainMenu
+				a(href="tel:+74959823839", title="Позвонить").Phone.Header_phone
+					include ../svg/SvgIco/phone
+					span.Phone_number.hidden-mdMinus +7 (495) 982 38 39
+				include MenuHamburger
+		.Header_top.Header_top-sticky.hidden-lgPlus
+			.Header_topLeft
+				a(href="/", title="На главную").Logo.Header_logo
+					img(src="img/logo.svg", alt="Логотип").Logo_img
+					span.Logo_text.
+						Land #[br]Management
+			.Header_topRight
+				include MainMenu
+				a(href="tel:+74959823839", title="Позвонить").Phone.Header_phone
+					include ../svg/SvgIco/phone
+					span.Phone_number.hidden-mdMinus +7 (495) 982 38 39
+				include MenuHamburger
+		.Header_bottom
+			.SiteInfo.Header_siteInfo
+				h1.SiteInfo_title Профессиональное управление #[br.hidden-smPlus]земельными активами
+				.SiteInfo_text.hidden-xs.
+					Профиль нашей деятельности – продажа земли, #[br]с целью ее дальнейшего освоения и развития, возведения жилых либо #[br.hidden-smMinus]промышленных объектов.
+				a(href="/objects.html").BtnWhite.BtnWhite-siteInfo Выбрать участок

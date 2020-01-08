@@ -1,0 +1,63 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Контакты";
+	- var headerBg = "bg_header_contacts_page.jpg";
+block content
+	.Breadcrumbs.hidden-xs
+		.Container
+			ul.Breadcrumbs_list
+				li.Breadcrumbs_item
+					a(href="/").Breadcrumbs_link Главная
+				li.Breadcrumbs_item
+					span.Breadcrumbs_itemText Контакты	
+	.Contacts
+		.Contacts_locationAndPhone
+			.Container
+				p 143421, Московская область, Красногорский район, 9 км Ново-Рижского шоссе, БЦ «RigaLand», стр. 3, подъезд 1
+				p Тел./факс: +7 (495) 982 38 39, +7 903 247 64 94
+		.MapSection.MapSection-contacts.Contacts_mapSection
+			.MapSection_map
+				#map(style="width: 100%; height: 100%;")
+			.MapSection_overlay.hidden-lgPlus
+			.Container.MapSection_container
+				button(type="button").MapSection_overlayToggle.hidden-lgPlus
+		.FormSection
+			.Container.FormSection_container
+				form(action="/ajax/form-response.json").Form.Form-sendMessage#SendMessage.FormSection_form
+					h2.Form_title Отправить сообщение
+					.Form_wrapper
+						.Form_items
+							.Form_item.Form_item-name
+								label(for="name2").FormLabel.Form_label Имя
+								input(type="text", name="name", id="name2", autocomplete="nope").FormText.Form_text
+							.Form_emailAndPhone
+								.Form_item.Form_item-email
+									label(for="email").FormLabel.Form_label Электронный адрес*
+									input(type="email", name="email", id="email", required, autocomplete="nope").FormText.Form_text
+								.Form_item.Form_item-phone
+									label(for="tel2").FormLabel.Form_label Номер телефона
+									input(type="tel", name="tel", id="tel2").FormText.Form_text
+						.Form_messageAndFile
+							.Form_item.Form_item-message
+								label(for="message").FormLabel.Form_label Сообщение*
+								textarea(name="message", id="message", required).FormTextarea.FormTextarea-attachFile
+								.FileUpload.Form_fileUpload.hidden-xs
+									.FileUpload_control
+										input(type="file", name="attach_doc", id="attach_doc").FileUpload_input
+										label(for="attach_doc").FileUpload_label
+											include includes/svg/SvgIco/attachment
+											span.FileUpload_labelText Прикрепите документ, если нужно
+									.FileUpload_result
+										span.FileUpload_filename
+										a(href="#").FileUpload_delete
+											include includes/svg/SvgIco/close
+						.Form_agreementAndActions
+							.Form_agreement
+								.Checkbox.Checkbox-agreement
+									input(type="checkbox", name="agreement", id="agreement2", required).Checkbox_input
+									label(for="agreement2").Checkbox_label Согласен с условиями обработки персональных данных
+							.Form_actions
+								button(type="submit").BtnBlue.BtnBlue-block Отправить
+block page_bottom
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=c3135be3-6869-4028-b619-79f9c4ee5010&lang=ru_RU", type="text/javascript")
+	script(src="/js/contacts.js")

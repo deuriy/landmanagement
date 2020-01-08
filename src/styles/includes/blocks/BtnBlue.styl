@@ -1,0 +1,63 @@
+.BtnBlue
+	display inline-block
+	padding 15px 24px 13px
+	border none
+	border-radius 2px
+	outline none
+	font-size 16px
+	text-align center
+	background $blue
+	color $white
+	@extend .transition
+	
+	&:disabled
+		opacity 0.6
+	
+	&:hover
+		&:not(:disabled)
+			background $darkBlue
+	
+	&-block
+		display block
+		width 100%
+	
+	&-large
+		display flex
+		justify-content center
+		align-items center
+		width 290px
+		max-width 100%
+		padding 37px 15px
+		box-shadow 0 15px 30px 0 rgba(0, 0, 0, 0.1)
+		font-weight 600
+		
+		&:hover
+			box-shadow none
+	
+	&-offersSection
+		width 280px
+		padding-top 17px
+		padding-bottom 17px
+	
+	&-servicePage
+		@media $smPlus
+			height 90px
+			padding-right 32px
+			padding-left 32px
+			line-height 1.63
+		
+		@media $mdPlus
+			padding-right 30px
+			padding-left 30px
+	
+	&-objectPage
+		padding-top 17px
+		padding-bottom 17px
+		
+		@media print
+			display none
+		
+		@media $lgPlus
+			width 446px
+			padding-top 12px
+			padding-bottom 12px

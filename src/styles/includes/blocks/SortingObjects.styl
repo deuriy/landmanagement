@@ -1,0 +1,44 @@
+.SortingObjects
+	&_list
+		display flex
+	
+	&_item
+		&-id
+			margin-right 28px
+			
+			@media $lgPlus
+				margin-right 21px
+			
+		&-location
+			margin-right 37px
+			
+		&-square
+			margin-right 38px
+			
+			@media $lgPlus
+				margin-right 45px
+			
+		&-cost
+			margin-right 55px
+		
+		&-active
+			.SortingObjects_link
+				&:after
+					top 1px
+					border-top-color transparent
+					border-bottom-color $blue
+	
+	&_link
+		position relative
+		padding-right 13px
+		font-size 13px
+		line-height 2.08
+		color $grey
+		
+		&:after
+			content ""
+			position absolute
+			top 6px
+			right 0
+			border 5px solid transparent
+			border-top-color $grey

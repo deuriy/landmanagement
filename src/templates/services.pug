@@ -1,0 +1,65 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Услуги";
+	- var headerBg = "bg_header_services_page.jpg";
+	- var headerClasses = "Header-servicesPage";
+	- var MainContentClass = "MainContent-services";
+block content
+	.Breadcrumbs.hidden-xs
+		.Container
+			ul.Breadcrumbs_list
+				li.Breadcrumbs_item
+					a(href="/").Breadcrumbs_link Главная
+				li.Breadcrumbs_item
+					span.Breadcrumbs_itemText #{title}
+	.Services.MainContent_services
+		.ServicesTypes
+			.Container.ServicesTypes_container
+				a(href="/service.html").BtnBlue.BtnBlue-large.ServicesTypes_item Стратегический консалтинг
+				a(href="/service2.html").BtnBlue.BtnBlue-large.ServicesTypes_item Продвижение объектов
+				a(href="/service3.html").BtnBlue.BtnBlue-large.ServicesTypes_item Экспертная оценка земли
+				a(href="/service4.html").BtnBlue.BtnBlue-large.ServicesTypes_item Лэнд-девелопмент
+		.PageDescription.PageDescription-servicesPage
+			.Container.PageDescription_container
+				.PageDescription_text.
+					Специалисты компании Land Management оказывают широкий спектр услуг в рамках такого направления своей деятельности, как покупка и продажа недвижимых активов. Мы предлагаем юридические и консалтинговые услуги по оценке земельных участков, берем на себя комплексное управление строительством, а также на профессиональном уровне решаем геодезические вопросы и вопросы лэнд-девелопмента.
+		.AccordionSection.Services_accordionSection.hidden-smMinus
+			.Container
+				h2.AccordionSection_title Необходим заголовок
+				.AccordionSection_items
+					.Accordion.AccordionSection_item
+						.Accordion_header
+							.Accordion_title По направлению лэнд-девелопмент специалисты компании Land Management оказывают следующие услуги:
+							a(href="#").ArrowCircle.Accordion_arrowCircle
+						.Accordion_body
+							ul.List.List-small
+								li Оценка эффективности использования земельного участка и выбор наиболее рационального способа его эксплуатации (Best use);
+								li Разработка комплексной стратегии развития территории и выбор оптимальных способов реализации данной цели;
+								li Изменение категории и/или вида разрешенного использования знинльного участка (только Московская область, не все районы);
+								li Разработка проекта перепланировки и его согласование во всех необходимых инстанциях.
+					.Accordion.AccordionSection_item
+						.Accordion_header
+							.Accordion_title Эксперты компании Land Management помогают решить широкий спектр юридических вопросов, в том числе оказывают свою поддержку по таким направлениям, как:
+							a(href="#").ArrowCircle.Accordion_arrowCircle
+						.Accordion_body
+							ul.List.List-small
+								li Оценка эффективности использования земельного участка и выбор наиболее рационального способа его эксплуатации (Best use);
+								li Разработка комплексной стратегии развития территории и выбор оптимальных способов реализации данной цели;
+								li Изменение категории и/или вида разрешенного использования знинльного участка (только Московская область, не все районы);
+								li Разработка проекта перепланировки и его согласование во всех необходимых инстанциях.
+					.Accordion.AccordionSection_item
+						.Accordion_header
+							.Accordion_title В перечень консалтинговых услуг, предоставляемых экспертами компании Land Management, входит:
+							a(href="#").ArrowCircle.Accordion_arrowCircle
+						.Accordion_body
+							ul.List.List-small
+								li Оценка эффективности использования земельного участка и выбор наиболее рационального способа его эксплуатации (Best use);
+								li Разработка комплексной стратегии развития территории и выбор оптимальных способов реализации данной цели;
+								li Изменение категории и/или вида разрешенного использования знинльного участка (только Московская область, не все районы);
+								li Разработка проекта перепланировки и его согласование во всех необходимых инстанциях.
+		.Container.hidden-smMinus
+			.Services_note Дополнительно специалистами компании осуществляются геодезические работы по межевому делу, топографии местности и геоподоснове.
+			a(href="tel:+74959823839").Phone.Phone-black
+				span.Phone_number +7 495 982 38 39
+block page_bottom
+	script(src="/js/services.js")

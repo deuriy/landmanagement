@@ -1,0 +1,60 @@
+.ProportionalImage
+	background-size cover
+	background-position center 0
+	border-top-right-radius 2px
+	border-top-left-radius 2px
+	
+	&:after
+		content ""
+		display block
+		padding-top 68.715%
+		
+		@media $sm
+			padding-top 58.56%
+		
+		@media $mdPlus
+			padding-top 54.7%
+	
+	@media $sm
+		background-position right 0
+		
+	@media $smPlus
+		border-top-right-radius 0
+		border-bottom-left-radius 2px
+	
+	&-objectCard
+		&:after
+			padding-top 69.13%
+			
+			@media $smPlus
+				padding-top 78.95%
+		
+		@media $smPlus
+			background-position center 0
+	
+	&-offerBlock
+		border-top-right-radius 3px
+		border-top-left-radius 3px
+		background-size auto 104%
+		background-position 53.8% -8px
+		
+		&:after
+			padding-top 74%
+			
+			@media $mdPlus
+				padding-top 62.165%
+		
+		@media $mdPlus
+			background-position 32.4% -8px
+	
+	&-objectPhoto
+		width 114px
+		
+		&:after
+			padding-top 66.67%
+		
+		@media $smPlus
+			width 246px
+		
+		@media $lgPlus
+			width 233px

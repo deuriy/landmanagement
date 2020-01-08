@@ -1,0 +1,32 @@
+form(action="/ajax/form-response.json", style="display:none;").Form.Form-popup.Form-getBetterConditions#GetBetterConditions
+	h2.Form_title Получить лучшие условия
+	.Form_wrapper
+		.Form_item
+			label(for="name").FormLabel.Form_label Имя
+			input(type="text", name="name", id="name").FormText.Form_text
+		.Form_item
+			label(for="tel").FormLabel.Form_label Номер телефона
+			input(type="tel", name="tel", id="tel").FormText.Form_text
+		.Form_item
+			label(for="date").FormLabel.Form_label День
+			.Form_controls
+				.Form_control.Form_control-date
+					select(name="date", id="date").Select.Select-dateTime
+						option(value="1") 02.03.2019
+						option(value="2") 03.03.2019
+						option(value="3") 04.03.2019
+						option(value="4") 05.03.2019
+						option(value="5") 06.03.2019
+				.Form_control
+					select(name="time", id="time").Select.Select-dateTime
+						option(value="1") 14:30
+						option(value="2") 15:30
+						option(value="3") 16:30
+						option(value="4") 17:30
+						option(value="5") 18:30
+		.Form_agreement
+			.Checkbox.Checkbox-agreement
+				input(type="checkbox", name="agreement", id="agreement").Checkbox_input
+				label(for="agreement").Checkbox_label Согласен с условиями обработки персональных данных
+		.Form_actions
+			button(type="submit").BtnBlue.BtnBlue-block Жду звонка

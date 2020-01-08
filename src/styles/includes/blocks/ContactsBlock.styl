@@ -1,0 +1,55 @@
+.ContactsBlock
+	width 280px
+	padding-top 31px
+	padding-bottom 40px
+	box-shadow 0 10px 15px 0 rgba(0, 0, 0, 0.1)
+	background $white
+	
+	@media $xs
+		text-align center
+	
+	@media $smPlus
+		width 449px
+		padding-top 49px
+		padding-bottom 60px
+		padding-left 50px
+	
+	&_phone
+		display inline-flex
+		margin-bottom 25px
+		font-weight 600
+		font-size 26px
+		line-height 1.04
+		
+		@media $smPlus
+			margin-bottom 31px
+			font-size 30px
+			line-height 0.9
+	
+	&_phoneIcon
+		@media $smPlus
+			width 21px
+			margin-right 23px
+	
+	&_location
+		@media $smPlus
+			display flex
+	
+	&_locationIcon
+		@media $smPlus
+			margin-right 21px
+	
+	&_locationDescription
+		font-size 16px
+		line-height 1.5
+		
+		& > p
+			&:not(:last-child)
+				margin-bottom 24px
+				
+				@media $smPlus
+					margin-bottom 27px
+		
+		@media $smPlus
+			font-size 20px
+			line-height 1.375

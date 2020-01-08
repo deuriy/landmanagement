@@ -1,0 +1,17 @@
+.MapSection
+	.MapSection_map
+		#map(style="width: 100%; height: 100%;")
+	.MapSection_overlay.hidden-lgPlus
+	.Container.MapSection_container
+		button(type="button").MapSection_overlayToggle.hidden-lgPlus
+		.ContactsBlock.MapSection_contactsBlock
+			a(href="tel:+74959823839", title="Позвонить").ContactsBlock_phone
+				.ContactsBlock_phoneIcon.hidden-xs
+					include ../svg/SvgIco/phone
+				span.ContactsBlock_phoneNumber +7 (495) 982 38 39
+			.ContactsBlock_location
+				.ContactsBlock_locationIcon.hidden-xs
+					include ../svg/SvgIco/location
+				.ContactsBlock_locationDescription
+					p 143421, Московская область, #[br]Красногорский район, #[br]9 км Ново-Рижского шоссе
+					p БЦ «RigaLand», стр.3, подъезд 1

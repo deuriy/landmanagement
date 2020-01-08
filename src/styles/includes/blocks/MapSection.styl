@@ -1,0 +1,100 @@
+.MapSection
+	position relative
+	
+	&_map
+		height 480px
+			
+		@media $smPlus
+			height 1024px
+		
+		@media $mdPlus
+			height 700px
+	
+	&_overlay
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background $blue
+		opacity 0.3
+	
+	&_container
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+		width 100%
+		height 100%
+		pointer-events none
+		
+		@media $mdPlus
+			display flex
+			justify-content flex-end
+			align-items center
+	
+	&_overlayToggle
+		position absolute
+		top 20px
+		right 20px
+		width 60px
+		height 60px
+		padding 0
+		border none
+		outline none
+		border-radius 50%
+		background-color transparent
+		background-image url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIzMCIgZmlsbD0iIzMwQTZERiIvPjxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjMiIGQ9Ik0xOSAyOVYxOGg5bTEyIDEzdjExaC05Ii8+PC9nPjwvc3ZnPg==')
+		@extend .transition
+		pointer-events all
+		
+		@media $smPlus
+			top 40px
+			right 40px
+		
+		&-close
+			background-image url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGZpbGw9IiMzMEE2REYiIGN4PSIzMCIgY3k9IjMwIiByPSIzMCIvPjxyZWN0IGZpbGw9IiNGRkYiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDI5LjY2NyAyOS42NjcpIiB4PSIyOC4xNjciIHk9IjE0LjY2NyIgd2lkdGg9IjMiIGhlaWdodD0iMzAiIHJ4PSIxLjUiLz48cmVjdCBmaWxsPSIjRkZGIiB0cmFuc2Zvcm09InJvdGF0ZSgxMzUgMjkuNjY3IDI5LjY2NykiIHg9IjI4LjE2NyIgeT0iMTQuNjY3IiB3aWR0aD0iMyIgaGVpZ2h0PSIzMCIgcng9IjEuNSIvPjwvZz48L3N2Zz4=')
+	
+	&_contactsBlock
+		position absolute
+		right 20px
+		bottom 20px
+		pointer-events all
+		
+		@media $smPlus
+			right 40px
+			bottom 40px
+		
+		@media $lgPlus
+			position static
+	
+	&-contacts
+		.MapSection_map
+			@media $sm
+				height 514px
+	
+	&-objectsPage
+		.MapSection_map
+			@media $smPlus
+				height 861px
+			
+			@media $lgPlus
+				height 830px
+	
+	&-objectPage
+		.MapSection_map
+			height 300px
+			
+			@media print
+				height auto
+			
+			@media $smPlus
+				height 646px
+			
+			@media $lgPlus
+				height 613px
+		
+		.MapSection_overlay, .MapSection_overlayToggle
+			@media print
+				display none

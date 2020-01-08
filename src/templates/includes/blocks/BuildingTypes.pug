@@ -1,0 +1,31 @@
+.InfoBlocksSection
+	.Container.InfoBlocksSection_container
+		h2.InfoBlocksSection_title Мы занимаемся продажей земельных участков:
+		.SwiperAll.SwiperAll-buildingTypes
+			.Swiper.swiper-container.InfoBlocksSection_slider.Swiper-buildingTypes
+				.swiper-wrapper
+					.Swiper_slide.swiper-slide
+						.InfoBlock.Swiper_infoBlock
+							.InfoBlock_img
+								img(src="img/building_types/building_type_1.jpg", alt="")
+							.InfoBlock_title Для строительства #[br]жилой недвижимости
+					.Swiper_slide.swiper-slide
+						.InfoBlock.Swiper_infoBlock
+							.InfoBlock_img
+								img(src="img/building_types/building_type_2.jpg", alt="")
+							.InfoBlock_title Для коммерческого и промышленного строительства
+					.Swiper_slide.swiper-slide
+						.InfoBlock.Swiper_infoBlock
+							.InfoBlock_img
+								img(src="img/building_types/building_type_3.jpg", alt="")
+							.InfoBlock_title Для сельхозхозяйственного назначения
+					.Swiper_slide.swiper-slide
+						.InfoBlock.Swiper_infoBlock
+							.InfoBlock_img
+								img(src="img/building_types/building_type_4.jpg", alt="")
+							.InfoBlock_title Для размещения объектов рекреации
+				.Swiper_pagination.hidden-mdPlus
+			button(type="button").SwiperArrow.SwiperAll_prev.hidden-mdPlus
+				include ../svg/SvgIco/arrow_left
+			button(type="button").SwiperArrow.SwiperAll_next.hidden-mdPlus
+				include ../svg/SvgIco/arrow_right

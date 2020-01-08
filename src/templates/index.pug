@@ -1,0 +1,16 @@
+extends /layouts/frontpage_layout
+block vars
+	- var title = "Главная страница";
+	- var headerBg = "bg_header_frontpage.jpg";
+block content
+	include includes/blocks/BuildingTypes
+	include includes/blocks/StatisticsSection
+	include includes/blocks/OffersSection
+	include includes/blocks/Advantages
+	include includes/blocks/MapSection
+	include includes/blocks/WriteUs
+	include includes/blocks/Form-sendMessage
+
+block page_bottom
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=c3135be3-6869-4028-b619-79f9c4ee5010&lang=ru_RU", type="text/javascript")
+	script(src="/js/index.js")

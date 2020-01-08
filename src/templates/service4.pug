@@ -1,0 +1,46 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Услуги";
+	- var headerBg = "bg_header_services_page.jpg";
+	- var headerClasses = "Header-servicesPage";
+block content
+	.Breadcrumbs.hidden-xs
+		.Container
+			ul.Breadcrumbs_list
+				li.Breadcrumbs_item
+					a(href="/").Breadcrumbs_link Главная
+				li.Breadcrumbs_item
+					a(href="/services.html").Breadcrumbs_link #{title}
+				li.Breadcrumbs_item
+					span.Breadcrumbs_itemText Лэнд-девелопмент
+	.Service
+		.PageDescription.PageDescription-servicePage
+			.Container.PageDescription_container
+				h2.PageDescription_title Лэнд-девелопмент
+				.PageDescription_text.
+					Направление стратегический консалтинг в Land Management &mdash; это обеспечение консультационной поддержки девелоперам и инвесторам в Москве, Московской области. Мы помогаем получить максимальный эффект от использования объектов, создать оптимальную схему финансирования и обеспечить сохранность инвестиций. Комплексный подход гарантирован к решению задач как для инвесторов, так и для девелоперов (собственников проектов).
+		.Service_posts
+			.Container
+				.Post.Service_post
+					h2.Post_title Услуги для инвесторов
+					.Post_content
+						ul
+							li - экспресс-анализ инвестиционной привлекательности проектов (включая анализ местоположения, анализ конкурентного окружения, определение рыночных параметров проекта, анализ эффективности, анализ рисков)
+							li - выработка рекомендаций по наилучшему использованию объектов на основании проведенного анализа физических характеристик проекта, местоположения, конкурентного анализ, анализа спроса и вариантов использования; разработка концепции проекта (включая разработку различных вариантов концепции реализации проекта, определения преимуществ и недостатков каждого варианта)
+							li - формирование стратегии развития проекта (включая финансовый план, оценка экономической эффективности проекта, оценка рисков) управление инвестиционным проектом (включая контроль за целевым использованием инвестиционных средств)
+				.Post.Service_post
+					h2.Post_title Услуги для девелоперов
+					.Post_content
+						ul
+							li -экспресс-анализ инвестиционной привлекательности проектов (включая анализ местоположения, анализ конкурентного окружения, определение рыночных параметров проекта, анализ эффективности, анализ рисков)
+							li - выработка рекомендаций по наилучшему использованию объектов на основании проведенного анализа физических характеристик проекта, местоположения, конкурентного анализ, анализа спроса и вариантов использования; разработка схем финансирования (включая определение наиболее эффективной схемы финансирования проекта и организацию финансирования)
+							li - подготовка инвестиционного меморандума (бизнес-планов) управление инвестиционными проектами (включая контроль за целевым использованием инвестиционных средств)
+		.Container
+			a(href="tel:+74959823839").Phone.Phone-black.Service_phone
+				span.Phone_number +7 495 982 38 39
+		.ServicesTypes.ServicesTypes-servicePage
+			.Container.ServicesTypes_container
+				a(href="/service.html").BtnBlue.BtnBlue-large.BtnBlue-servicePage.ServicesTypes_item Стратегический консалтинг
+				a(href="/service2.html").BtnBlue.BtnBlue-large.BtnBlue-servicePage.ServicesTypes_item Продвижение объектов
+				a(href="/service3.html").BtnBlue.BtnBlue-large.BtnBlue-servicePage.ServicesTypes_item Экспертная оценка земли
+block page_bottom

@@ -1,0 +1,31 @@
+.Logo
+	display flex
+	-webkit-align-items center
+	align-items center
+	
+	&_img
+		width 32px
+		margin-right 5px
+		
+		@media $smPlus
+			width 49px
+			margin-right 7px
+	
+	&_text
+		font-weight bold
+		font-size 15px
+		letter-spacing 0.018em
+		color $white
+		
+		@media $smPlus
+			font-size 24.4px
+	
+	&-headerFixed
+		.Logo_img
+			@media $smPlus
+				width 32px
+				margin-right 4px
+		
+		.Logo_text
+			@media $smPlus
+				font-size 15px

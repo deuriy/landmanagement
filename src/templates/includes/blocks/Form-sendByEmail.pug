@@ -1,0 +1,15 @@
+form(action="/ajax/form-response.json", style="display:none;").Form.Form-popup.Form-sendByEmail#SendByEmail
+	h2.Form_title Отправить по e-mail
+	.Form_wrapper
+		.Form_item
+			label(for="username").FormLabel.Form_label Имя
+			input(type="text", name="username", id="username").FormText.Form_text
+		.Form_item
+			label(for="email").FormLabel.Form_label E-mail
+			input(type="email", name="email", id="email").FormText.Form_text
+		.Form_agreement
+			.Checkbox.Checkbox-agreement
+				input(type="checkbox", name="agreement2", id="agreement2").Checkbox_input
+				label(for="agreement2").Checkbox_label Согласен с условиями обработки персональных данных
+		.Form_actions
+			button(type="submit").BtnBlue.BtnBlue-block Отправить

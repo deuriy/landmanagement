@@ -1,0 +1,80 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Услуги";
+	- var headerBg = "bg_header_services_page.jpg";
+	- var headerClasses = "Header-servicesPage";
+block content
+	.Breadcrumbs.hidden-xs
+		.Container
+			ul.Breadcrumbs_list
+				li.Breadcrumbs_item
+					a(href="/").Breadcrumbs_link Главная
+				li.Breadcrumbs_item
+					a(href="/services.html").Breadcrumbs_link #{title}
+				li.Breadcrumbs_item
+					span.Breadcrumbs_itemText Экспертная оценка земли
+	.Service
+		.PageDescription.PageDescription-servicePage
+			.Container.PageDescription_container
+				h2.PageDescription_title Экспертная оценка земли
+				.PageDescription_text.
+					LandManagement оказывает услуги по разработке и реализации полного комплекса маркетинговых и рекламных мероприятий для объектов земли, недвижимости, а также инвестиционных проектов.
+		.Service_posts
+			.Container
+				.Post.Service_post
+					h2.Post_title Минимальный набор предоставляемых документов:
+					.Post_content
+						ul
+							li — Правоустанавливающие документы (в зависимости от наличия документов)
+							li — Документы, подтверждающие права на имущество
+							li — Свидетельства о государственной регистрации права
+							li — Договоры, на основании которых возникают права на имущество
+							li — Арендные и инвестиционные контракты
+							li — Инвентаризационные документы (в зависимости от наличия документов)
+							li — Кадастровые документы (для земельных участков)
+				.Post.Service_post
+					h2.Post_title Дополнительные документы:
+					.Post_content
+						ul
+							li - Коммуникации - документы, об инженерных сетях, энергоснабжении, канализации и других видах коммуникаций. Данная информация может дать нам дополнительную объективную возможность для присвоения более высоких коэффициентов при оценке недвижимости и земельных участков, и как следствие, более высокой стоимости в результате оценки
+							li - Арендаторы - когда речь идет об инвестиционной оценке, в большинстве случаев дополнительная оценка качества контрактов и арендаторов позволяет существенно увеличить стоимость недвижимости
+				.Post.Service_post
+					h2.Post_title Направления оценки земли и земельных участков:
+					.Post_content
+						ul
+							li - Оценка аренды земли
+							li - Рыночная оценка земли
+							li - Оценка стоимости земельных участков
+							li - Оценка сельскохозяйственных земель
+							li - Оценка земли под индивидуальное жилищное строительство (ИЖС)
+							li - Оценка земли промышленности
+							li - Оценка дачных участков
+							li - Оценка земель поселения
+							li - Оценка межевания
+							li - Оценка ландшафта
+							li - Оценка территорий
+				.Post.Service_post
+					h2.Post_title Цели проведения оценки земли и земельных участков:
+					.Post_content
+						ul
+							li - Оценка арендной ставки
+							li - Оценка при внесении взноса в уставной капитал
+							li - Оценка для выкупа
+							li - Оценка для инвестирования
+							li - Оценка при разделе имущества и имущественных спорах
+							li - Оценка для получения кредита
+							li - Оценка для купли / продажи
+							li - Оценка для обеспечения залога
+							li - Переоценка
+							li - Оценка при постановке на баланс
+							li - Оценка для судебного процесса
+							li - Оценка ущерба и упущенной выгоды
+		.Container
+			a(href="tel:+74959823839").Phone.Phone-black.Service_phone
+				span.Phone_number +7 495 982 38 39
+		.ServicesTypes.ServicesTypes-servicePage
+			.Container.ServicesTypes_container
+				a(href="/service.html").BtnBlue.BtnBlue-large.BtnBlue-servicePage.ServicesTypes_item Стратегический консалтинг
+				a(href="/service2.html").BtnBlue.BtnBlue-large.BtnBlue-servicePage.ServicesTypes_item Продвижение объектов
+				a(href="/service4.html").BtnBlue.BtnBlue-large.BtnBlue-servicePage.ServicesTypes_item Лэнд-девелопмент
+block page_bottom

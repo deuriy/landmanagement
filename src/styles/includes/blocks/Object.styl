@@ -1,0 +1,128 @@
+.Object
+	padding-top 20px
+	padding-bottom 49px
+	background $lightgrey
+	
+	@media $smPlus
+		padding-top 30px
+		padding-bottom 69px
+	
+	@media $lgPlus
+		padding-bottom 60px
+	
+	&_container
+		@media $xs
+			padding-right 0
+			padding-left 0
+		
+		@media $smPlus
+			padding-right 10px
+			padding-left 10px
+		
+		@media $lgPlus
+			padding-right 40px
+			padding-left 40px
+	
+	&_title
+		width 487px
+		max-width 100%
+		margin 0 auto 20px
+		padding-right 15px
+		padding-left 15px
+		font-weight 600
+		font-size 24px
+		line-height 1.5
+		
+		@media print
+			margin-right 0
+			margin-bottom 0.2cm
+			margin-left 0
+		
+		@media $smPlus
+			width 748px
+			margin-bottom 22px
+			padding-left 29px
+			font-size 28px
+			line-height 0.96
+		
+		@media $lgPlus
+			width auto
+			padding-left 0
+	
+	&_mainInformation
+		@media $lgPlus
+			display flex
+			justify-content space-between
+	
+	&_areaInformation, &_additionalInfo
+		margin-right auto
+		margin-left auto
+		
+		@media $lgPlus
+			margin-right 0
+			margin-left 0
+	
+	&_areaInformation
+		@media $smPlus
+			margin-bottom 40px
+		
+		@media $lgPlus
+			flex-shrink 0
+	
+	&_additionalInfo
+		width 487px
+		max-width 100%
+		
+		@media print
+			width 100%
+		
+		@media $smPlus
+			width 688px
+		
+		@media $lgPlus
+			width 653px
+	
+	&_map
+		margin-bottom 12px
+		
+		@media $lgPlus
+			margin-bottom 14px
+	
+	&_photos
+		margin-bottom 30px
+		
+		@media print
+			display none !important
+		
+		@media $smPlus
+			margin-bottom 26px
+		
+		@media $lgPlus
+			margin-bottom 57px
+	
+	&_actionLinks
+		display flex
+		flex-direction column
+		align-items center
+		
+		@media print
+			display none
+		
+		@media $smPlus
+			flex-direction row
+			justify-content space-between
+		
+		@media $lgPlus
+			justify-content flex-start
+	
+	&_actionLink
+		line-height 1.69
+		
+		&:not(:last-child)
+			margin-bottom 11px
+			
+			@media $smPlus
+				margin-bottom 0
+			
+			@media $lgPlus
+				margin-right 40px

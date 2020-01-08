@@ -1,0 +1,59 @@
+.WriteUs
+	padding-top 49px
+	padding-bottom 50px
+	background $green
+	color $white
+	
+	@media $xs
+		text-align center
+	
+	@media $smPlus
+		padding-top 40px
+	
+	@media $lgPlus
+		padding-top 70px
+		padding-bottom 60px
+	
+	&_container
+		@media $smPlus
+			display flex
+			justify-content space-between
+			align-items center
+	
+	&_text
+		line-height normal
+		
+		@media $lgPlus
+			display flex
+			align-items center
+	
+	&_title
+		margin-bottom 20px
+		font-weight 600
+		font-size 20px
+		
+		@media $smPlus
+			margin-bottom 10px
+			font-size 30px
+			line-height 1.5
+		
+		@media $mdPlus
+			font-size 40px
+	
+	&_description
+		font-size 16px
+		
+		@media $xs
+			margin-bottom 40px
+		
+		@media $lgPlus
+			width 218px
+			margin-top -12px
+			margin-left 51px
+	
+	&_btn
+		width 165px
+		
+		@media $lgPlus
+			margin-top -12px
+			margin-right 65px

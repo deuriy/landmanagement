@@ -1,0 +1,24 @@
+.Phone
+	display inline-flex
+	-webkit-align-items center
+	align-items center
+	color $white
+	
+	& > .SvgIco
+		width 15px
+		
+		@media $lgPlus
+			width 22px
+			margin-right 12px
+	
+	&_number
+		@media $lgPlus
+			font-weight 600
+			font-size 20px
+	
+	&-black
+		.Phone_number
+			font-weight 600
+			font-size 30px
+			line-height 1.13
+			color $dark

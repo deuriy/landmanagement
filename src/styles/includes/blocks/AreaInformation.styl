@@ -1,0 +1,172 @@
+.AreaInformation
+	width 487px
+	max-width 100%
+	padding-right 15px
+	padding-left 15px
+	background $white
+	
+	@media print
+		width 100%
+		min-height 100vh
+	
+	@media $smPlus
+		width 748px
+		padding-top 6px
+		padding-right 30px
+		padding-left 31px
+	
+	@media $lgPlus
+		width 487px
+		padding-right 18px
+		padding-left 18px
+	
+	&_group
+		position relative
+		padding 20px 46px 21px 0
+		border-bottom 1px solid #c9cacd
+		
+		@media print
+			padding-top 0.12cm
+			padding-bottom 0.06cm
+		
+		@media $smPlus
+			padding-top 20px
+			padding-right 0
+			padding-bottom 38px
+		
+		@media $lgPlus
+			padding-top 21px
+		
+		&-pricesAndBtn
+			padding 38px 0 29px
+			border-bottom none
+			
+			@media print
+				padding-top 0
+				padding-bottom 0.2cm
+			
+			@media $smPlus
+				padding-top 15px
+				padding-bottom 32px
+	
+	&_groupTitle
+		font-weight 600
+		font-size 16px
+		line-height 1.69
+		color #676B75
+		
+		@media print
+			display none
+		
+		&-thin
+			font-weight normal
+			line-height 1.5
+	
+	&_arrowCircle
+		position absolute
+		right 0
+		bottom 15px
+		
+		@media print
+			display none !important
+	
+	&_items
+		display none
+		margin-top 12px
+		margin-bottom 30px
+		
+		@media $smPlus
+			display block
+			margin-top 0
+			margin-bottom 0
+		
+		@media print
+			display block
+		
+		&-prices
+			display block
+			margin-top 21px
+			margin-bottom 37px
+			
+			@media $smPlus
+				margin-bottom 26px
+			
+			@media $lgPlus
+				margin-bottom 24px
+	
+	&_item
+		margin-bottom 20px
+		font-size 16px
+		line-height 1.69
+		color $grey
+		
+		@media print
+			display flex
+			margin-bottom 0.25cm
+		
+		@media $smPlus
+			display flex
+			margin-bottom 8px
+		
+		&:last-child
+			margin-bottom 0
+			
+			@media print
+				margin-bottom 0
+		
+		&-transport, &-environment, &-vri
+			line-height 1.25
+	
+	&_itemTitle
+		width 170px
+		font-weight 600
+		
+		@media print
+			flex 1 0 0
+		
+		@media $smPlus
+			flex 1 0 0
+	
+	&_itemValue
+		@media print
+			flex 1 0 0
+			
+		@media $smPlus
+			flex 1 0 0
+		
+		@media $lgPlus
+			padding-left 5px
+			
+		&-bold
+			font-weight 600
+	
+	&_actionLinks
+		display flex
+		flex-direction column
+		align-items center
+		margin-top 13px
+		
+		@media print
+			display none
+		
+		@media $smPlus
+			flex-direction row
+			justify-content center
+			margin-top 27px
+		
+		@media $lgPlus
+			justify-content space-between
+			padding-right 5px
+	
+	&_actionLink
+		line-height 1.69
+		
+		&:not(:last-child)
+			margin-bottom 23px
+			
+			@media $smPlus
+				margin-bottom 0
+				margin-right 50px
+			
+			@media $lgPlus
+				margin-right 0

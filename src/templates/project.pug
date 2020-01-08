@@ -1,0 +1,51 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Проекты";
+	- var headerBg = "bg_header_project_page.jpg";
+	- var headerClasses = "Header-projectPage";
+block content
+	.Breadcrumbs.hidden-xs
+		.Container
+			ul.Breadcrumbs_list
+				li.Breadcrumbs_item
+					a(href="/").Breadcrumbs_link Главная
+				li.Breadcrumbs_item
+					a(href="/projects.html").Breadcrumbs_link #{title}
+				li.Breadcrumbs_item
+					span.Breadcrumbs_itemText Индустриальный парк М4
+	.Project
+		.Container.Project_container
+			h2.Project_title Индустриальный парк М4
+			.Project_description «Индустриальный парк М4» представляет собой подготовленную для строительства промышленную территорию площадью 81 Га. Территория Парка включает в себя общие объекты инфраструктуры, такие как дороги, стоянки для большегрузных автомобилей, объекты электро и газоснабжения, водозаборный узел, а также очистные сооружения.
+			.Tabs.Tabs-project.Project_tabs
+				.Tabs_listWrapper
+					ul.Tabs_list
+						li.Tabs_item.Tabs_item-active
+							a(href="#").Tabs_link Цель проекта
+						li.Tabs_item
+							a(href="#").Tabs_link Расположение
+						li.Tabs_item
+							a(href="#").Tabs_link Правовая информация
+						li.Tabs_item
+							a(href="#").Tabs_link Генеральный план
+					span.Tabs_underline
+				.Tabs_container
+					.Tabs_content
+						p Целью создания Индустриального Парка является обеспечение организаций малого и среднего бизнеса качественными производственно-складскими площадями, возможностями для эффективного развития собственного бизнеса. Площадь земельных участков в Индустриальном парке составляет от 0,5 до 20 Га. Концепция Индустриального Парка предусматривает зонирование территории таким образом, чтобы на ней могли одновременно разместиться пищевые производства и предприятия других отраслей промышленности.
+						img(src="img/project.jpg", alt="Цель проекта")
+					.Tabs_content
+						p «Индустриальный Парк М4» удобно расположен недалеко от Москвы, вблизи Каширского шоссе, всего в 9 км от МКАД. Отличительной особенностью Индустриального Парка является превосходная транспортная доступность. В «Индустриальный Парк М4» можно проехать по Старому Каширскому шоссе, по автодороге «Дон», а также по трассе в аэропорт Домодедово.
+						img(src="img/project_map.png", alt="Расположение")
+					.Tabs_content
+						ul
+							li - вид права – собственность;
+							li - категория земель – земли промышленности;
+							li - вид разрешенного использования – для размещения многофункционального административно-торгового производственно-складского комплекса.
+					.Tabs_content
+						img(src="img/project_map.png", alt="Расположение")
+			include includes/blocks/PresentationBlock
+			.Project_links
+				a(href="#").Link.Project_link Предыдущий проект
+				a(href="#").Link.Project_link Следующий проект
+block page_bottom
+	script(src="/js/project.js")

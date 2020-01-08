@@ -1,0 +1,117 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Объекты";
+	- var headerBg = "bg_header_objects_page.jpg";
+	- var headerClasses = "Header-objectPage";
+block content
+	.Breadcrumbs.hidden-xs
+		.Container
+			ul.Breadcrumbs_list
+				li.Breadcrumbs_item
+					a(href="/").Breadcrumbs_link Главная
+				li.Breadcrumbs_item
+					a(href="/objects.html").Breadcrumbs_link #{title}
+				li.Breadcrumbs_item
+					span.Breadcrumbs_itemText Участок ID210
+	.Object
+		.Container.Object_container
+			h2.Object_title Информация по участку ID210
+			.Object_mainInformation
+				.AreaInformation.Object_areaInformation
+					.AreaInformation_group.AreaInformation_group-collapsible
+						h3.AreaInformation_groupTitle.hidden-smPlus Расположение
+						a(href="#").ArrowCircle.AreaInformation_arrowCircle.hidden-smPlus
+						.AreaInformation_items
+							.AreaInformation_item
+								.AreaInformation_itemTitle Шоссе
+								.AreaInformation_itemValue Киевское
+							.AreaInformation_item
+								.AreaInformation_itemTitle Населённый пункт
+								.AreaInformation_itemValue Жедочи
+							.AreaInformation_item
+								.AreaInformation_itemTitle Расстояние от МКАД
+								.AreaInformation_itemValue 35 км
+							.AreaInformation_item.AreaInformation_item-transport
+								.AreaInformation_itemTitle Транспортная #[br]доступность
+								.AreaInformation_itemValue Автомобилем - #[br]асфальтированная дорога
+					.AreaInformation_group.AreaInformation_group-collapsible
+						h3.AreaInformation_groupTitle.hidden-smPlus Описание
+						a(href="#").ArrowCircle.AreaInformation_arrowCircle.hidden-smPlus
+						.AreaInformation_items
+							.AreaInformation_item
+								.AreaInformation_itemTitle Площадь
+								.AreaInformation_itemValue 4.76 Га
+							.AreaInformation_item
+								.AreaInformation_itemTitle Рельеф
+								.AreaInformation_itemValue Ровный
+							.AreaInformation_item
+								.AreaInformation_itemTitle Наличие леса
+								.AreaInformation_itemValue Нет
+							.AreaInformation_item.AreaInformation_item-environment
+								.AreaInformation_itemTitle Непосредственное #[br]окружение
+								.AreaInformation_itemValue Поле, река, сельский #[br]ландшафт, промышленный #[br]ландшафт
+					.AreaInformation_group.AreaInformation_group-collapsible
+						h3.AreaInformation_groupTitle.hidden-smPlus Категория
+						a(href="#").ArrowCircle.AreaInformation_arrowCircle.hidden-smPlus
+						.AreaInformation_items
+							.AreaInformation_item
+								.AreaInformation_itemTitle Вид права
+								.AreaInformation_itemValue Собственность
+							.AreaInformation_item
+								.AreaInformation_itemTitle Категория земель
+								.AreaInformation_itemValue Земли населённых пунктов
+							.AreaInformation_item.AreaInformation_item-vri
+								.AreaInformation_itemTitle ВРИ
+								.AreaInformation_itemValue Для малоэтажного #[br]жилищного строительства #[br]и рекреационных целей
+					.AreaInformation_group.AreaInformation_group-pricesAndBtn
+						.AreaInformation_groupTitle.AreaInformation_groupTitle-thin Участок для малоэтажного строительства рядом с ЦКАД
+						.AreaInformation_items.AreaInformation_items-prices
+							.AreaInformation_item
+								.AreaInformation_itemTitle Стоимость участка
+								.AreaInformation_itemValue.AreaInformation_itemValue-bold 119 000 000 руб.
+							.AreaInformation_item
+								.AreaInformation_itemTitle Стоимость за сотку
+								.AreaInformation_itemValue.AreaInformation_itemValue-bold 250 000 руб.
+						a(href="javascript:;", data-fancybox, data-src="#GetBetterConditions").BtnBlue.BtnBlue-block.BtnBlue-objectPage Получить лучшие условия
+						.AreaInformation_actionLinks
+							a(href="javascript:;", data-fancybox, data-src="#SendByEmail").Link.AreaInformation_actionLink Отправить по e-mail
+							a(href="javascript:window.print(); void 0;").Link.AreaInformation_actionLink Распечатать
+							a(href="#").Link.Link-blue.Link-pdf.AreaInformation_actionLink Скачать PDF
+				.Object_additionalInfo
+					.Object_map
+						.MapSection.MapSection-objectPage
+							.MapSection_map
+								#map(style="width: 100%; height: 100%;", data-coords='[55.7804, 37.2328]', data-placemark-title="Адрес метки")
+							.MapSection_overlay.hidden-mdPlus
+							.Container.MapSection_container
+								button(type="button").MapSection_overlayToggle.hidden-mdPlus
+					.Object_photos
+						.Swiper.Swiper-objectPhotos.swiper-container
+							.swiper-wrapper
+								.swiper-slide.Swiper_slide(data-src="img/object_photos/1.jpg", data-fancybox="object-photos")
+									.ProportionalImage.ProportionalImage-objectPhoto(style="background-image: url('img/object_photos/1.jpg')")
+								.swiper-slide.Swiper_slide(data-src="img/object_photos/2.jpg", data-fancybox="object-photos")
+									.ProportionalImage.ProportionalImage-objectPhoto(style="background-image: url('img/object_photos/2.jpg')")
+								.swiper-slide.Swiper_slide(data-src="img/object_photos/3.jpg", data-fancybox="object-photos")
+									.ProportionalImage.ProportionalImage-objectPhoto(style="background-image: url('img/object_photos/3.jpg')")
+								.swiper-slide.Swiper_slide(data-src="img/object_photos/1.jpg", data-fancybox="object-photos")
+									.ProportionalImage.ProportionalImage-objectPhoto(style="background-image: url('img/object_photos/1.jpg')")
+								.swiper-slide.Swiper_slide(data-src="img/object_photos/2.jpg", data-fancybox="object-photos")
+									.ProportionalImage.ProportionalImage-objectPhoto(style="background-image: url('img/object_photos/2.jpg')")
+								.swiper-slide.Swiper_slide(data-src="img/object_photos/3.jpg", data-fancybox="object-photos")
+									.ProportionalImage.ProportionalImage-objectPhoto(style="background-image: url('img/object_photos/3.jpg')")
+							button(type="button").SwiperArrow.SwiperArrow-objectPhotos.Swiper_prev
+								include includes/svg/SvgIco/arrow_left
+							button(type="button").SwiperArrow.SwiperArrow-objectPhotos.Swiper_next
+								include includes/svg/SvgIco/arrow_right
+					.Object_actionLinks.hidden-smPlus
+						a(href="/object.html").Link.Object_actionLink Предыдущий проект
+						a(href="/object.html").Link.Object_actionLink Следующий проект
+					.Object_actionLinks.hidden-xs
+						a(href="/object.html").Link.Object_actionLink Смотреть предыдущий участок
+						a(href="/object.html").Link.Object_actionLink Смотреть следующий участок
+	include includes/blocks/Form
+	include includes/blocks/Form-sendByEmail
+block page_bottom
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=c3135be3-6869-4028-b619-79f9c4ee5010&lang=ru_RU", type="text/javascript")
+	script(src="/js/object.js")

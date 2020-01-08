@@ -1,0 +1,163 @@
+.Swiper
+	&_infoBlock, &_activity
+		margin-right auto
+		margin-left auto
+	
+	&_pagination
+		display flex
+		justify-content center
+		margin-top 12px
+		
+		@media $smPlus
+			margin-top 24px
+		
+		&-offerBlock
+			margin-top 30px
+			
+			.Swiper_paginationItem:not(.Swiper_paginationItem-active)
+				background #CBCDD0
+			
+			@media $smPlus
+				padding-right 40px
+	
+	&_paginationItem
+		width 6px
+		height 6px
+		margin 0 3px
+		border-radius 50%
+		background $white
+		cursor pointer
+		@extend .transition
+		
+		&-active
+			background $dark
+	
+	&_prev, &_next
+		position absolute
+		z-index 1
+		top 60px
+	
+	&_prev
+		left 5px
+	
+	&_next
+		right 5px
+	
+	&-buildingTypes
+		@media $sm
+			max-width 546px
+			margin-right auto
+			margin-left auto
+			
+		.Swiper_prev, .Swiper_next
+			@media $smPlus
+				top 56px
+				
+		.Swiper_prev
+			@media $smPlus
+				left 12px
+				
+		.Swiper_next
+			@media $smPlus
+				right 12px
+	
+	&-offerBlock
+		.Swiper_slide
+			@media $mdMinus
+				width auto
+				padding-left 20px
+			
+			&-active
+				padding-left 10px
+				
+				@media $smPlus
+					padding-left 40px
+				
+				@media $lgPlus
+					padding-left 0
+					
+					.Swiper_offerBlock
+						margin-right 0
+			
+			&-next+.Swiper_slide
+				.Swiper_offerBlock
+					@media $lgPlus
+						margin-left 0
+		
+		.Swiper_offerBlock
+			@media $lgPlus
+				margin-right auto
+				margin-left auto
+	
+	&-advantages
+		@media $lgPlus
+			max-width 1024px
+			margin-right auto
+			margin-left auto
+			
+		.Swiper_prev
+			@media $smPlus
+				left 0
+				
+		.Swiper_next
+			@media $smPlus
+				right 0
+				
+		.Swiper_pagination
+			margin-top 46px
+	
+	&-activities
+		.Swiper_slide
+			@media $mdPlus
+				&:nth-child(3n+1)
+					.Swiper_activity
+						margin-left 0
+				
+				&:nth-child(3n-3)
+					.Swiper_activity
+						margin-bottom 68px
+			
+		.Swiper_prev, .Swiper_next
+			top 30px
+		
+		.Swiper_prev
+			left 0
+		
+		.Swiper_next
+			right 0
+	
+	&-keyBenefits
+		.Swiper_pagination
+			margin-top 40px
+			
+			@media $smPlus
+				margin-top 70px
+			
+			@media $mdPlus
+				margin-top 68px
+		
+		.Swiper_prev, .Swiper_next
+			@media $smPlus
+				top 24px
+		
+		.Swiper_prev
+			@media $smPlus
+				left 0
+		
+		.Swiper_next
+			@media $smPlus
+				right 0
+	
+	&-objectPhotos
+		.Swiper_slide
+			width auto
+			cursor pointer
+			
+		.Swiper_prev, .Swiper_next
+			top 0
+		
+		.Swiper_prev
+			left 0
+		
+		.Swiper_next
+			right 0

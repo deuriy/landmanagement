@@ -1,0 +1,39 @@
+.MobileNavigation.Header_mobileNavigation
+	.MobileNavigation_inner
+		.Container.MobileNavigation_top
+			.MobileNavigation_topLeft
+				a(href="/", title="На главную").Logo.MobileNavigation_logo
+					img(src="img/logo.svg", alt="Логотип").Logo_img
+					span.Logo_text.
+						Land #[br]Management
+			.MobileNavigation_topRight
+				a(href="tel:+74959823839", title="Позвонить").Phone.MobileNavigation_phone
+					include ../svg/SvgIco/phone
+				a(href="#").MobileNavigation_close
+					include ../svg/SvgIco/close
+		.MobileNavigation_middle
+			.MainMenu.MobileNavigation_mainMenu
+				ul.MainMenu_menu
+					li.MainMenu_item
+						a(href="/about.html").MainMenu_link О компании
+					li.MainMenu_item
+						a(href="/objects.html").MainMenu_link Объекты
+					li.MainMenu_item
+						a(href="/projects.html").MainMenu_link Проекты
+					li.MainMenu_item
+						a(href="/services.html").MainMenu_link Услуги
+						.MainMenu_subMenu
+							ul.MainMenu_subMenuList
+								li.MainMenu_subMenuItem
+									a(href="/service.html").MainMenu_subMenuLink Стратегический консалтинг
+								li.MainMenu_subMenuItem
+									a(href="/service2.html").MainMenu_subMenuLink Продвижение объектов
+								li.MainMenu_subMenuItem
+									a(href="/service3.html").MainMenu_subMenuLink Экспертная оценка земли
+								li.MainMenu_subMenuItem
+									a(href="/service4.html").MainMenu_subMenuLink Лэнд-девелопмент
+					li.MainMenu_item
+						a(href="/contacts.html").MainMenu_link Контакты
+			a(href="tel:+74959823839", title="Позвонить").MobileNavigation_phoneNumber +7 (495) 982 38 39
+		.MobileNavigation_bottom
+			include SocIcons

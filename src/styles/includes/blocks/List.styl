@@ -1,0 +1,36 @@
+.List
+	& > li
+		position relative
+		padding-left 41px
+		font-size 16px
+		line-height 1.63
+		
+		& > strong, & > b
+			font-weight 600
+		
+		&:before
+			content ""
+			position absolute
+			top 12px
+			left -1px
+			width 6px
+			height 6px
+			border-radius 8px
+			background $blue
+		
+		&:not(:last-child)
+			margin-bottom 26px
+	
+	&-small
+		& > li
+			padding-left 21px
+			font-size 14px
+			line-height normal
+			
+			&:before
+				top 6px
+				width 8px
+				height 8px
+			
+			&:not(:last-child)
+				margin-bottom 7px

@@ -1,0 +1,39 @@
+.Objects
+	background $lightgrey
+	
+	@media $lgPlus
+		padding-bottom 71px
+	
+	&_container
+		@media $xs
+			padding-right 0
+			padding-left 0
+		
+		@media $smPlus
+			padding-right 10px
+			padding-left 10px
+		
+		@media $lgPlus
+			display flex
+			align-items flex-start
+			padding-right 40px
+			padding-left 40px
+	
+	&_filterBlock
+		margin-right auto
+		margin-left auto
+		
+		@media $lgPlus
+			flex-shrink 0
+			margin-right 0
+			margin-left 0
+	
+	&_searchResults
+		@media $smPlus
+			margin-right auto
+			margin-left auto
+		
+		@media $lgPlus
+			flex-grow 1
+			margin-right 0
+			margin-left 29px

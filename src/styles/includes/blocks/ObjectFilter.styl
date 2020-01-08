@@ -1,0 +1,133 @@
+.ObjectFilter
+	&_checkboxesAndSelects, &_rangeSliderGroup
+		display flex
+		flex-direction column
+		
+		@media $smPlus
+			flex-direction row
+		
+		@media $lgPlus
+			flex-direction column
+	
+	&_checkboxesAndSelects
+		@media $smPlus
+			margin-bottom -10px
+			
+	&_item
+		margin-bottom 17px
+		
+		&:last-child
+			margin-bottom 0
+		
+		&-checkboxes
+			@media $smPlus
+				flex-grow 1
+				flex-basis 0
+			
+			@media $lgPlus
+				margin-right 4px
+		
+		&-select
+			margin-bottom 11px
+		
+		&-rangeSlider
+			margin-bottom 27px
+		
+			@media $smPlus
+				flex-grow 1
+				flex-basis 0
+		
+		&-areaCost
+			@media $smPlus
+				margin-left 30px
+			
+			@media $lgPlus
+				margin-left 0
+	
+	&_label
+		margin-bottom 15px
+		margin-left 5px
+		
+		@media $lgPlus
+			margin-left 0
+		
+		&-checkboxes
+			@media $smPlus
+				margin-left 0
+		
+		&-select
+			margin-bottom 3px
+		
+		&-range
+			margin-bottom 26px
+			margin-left 0
+	
+	&_checkbox
+		margin-bottom 8px
+		
+		@media $smPlus
+			margin-bottom 21px
+		
+		@media $lgPlus
+			margin-bottom 8px
+		
+		&:last-child
+			margin-bottom 0
+	
+	&_selectGroup
+		margin-bottom 21px
+		
+		@media $smPlus
+			flex-grow 1
+			flex-basis 0
+			margin-left 29px
+		
+		@media $lgPlus
+			margin 0 1px 31px 0
+	
+	&_rangeSliderGroup
+		margin-bottom 46px
+		
+		@media $smPlus
+			margin-bottom 0
+		
+		@media $lgPlus
+			margin-bottom 46px
+	
+	&_rangeSlider
+		margin 0 8px 14px
+	
+	&_rangeValues
+		display flex
+		justify-content space-between
+		font-size 14px
+		color $grey
+	
+	&_actions
+		text-align center
+	
+	&_buttons
+		display flex
+		margin-bottom 26px
+		
+		@media $smPlus
+			margin-bottom 30px
+		
+		@media $lgPlus
+			margin-bottom 26px
+	
+	&_clearBtn
+		@media $smPlus
+			margin-left 30px
+	
+	&_clearFilter
+		margin-bottom 36px
+	
+	&_searchResults
+		@media $smPlus
+			padding-left 40px
+			text-align left
+		
+		@media $lgPlus
+			padding-left 0
+			text-align center

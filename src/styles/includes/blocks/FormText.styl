@@ -1,0 +1,26 @@
+.FormText
+	width 100%
+	height 50px
+	padding 0 15px
+	border 1px solid #cdcfd3
+	outline none
+	border-radius 2px
+	
+	&.error
+		padding-right 50px
+		border-color #E41D03
+		background url('../img/error.svg') calc(100% - 12px) center / 26px no-repeat
+	
+	&.valid
+		padding-right 50px
+		border-color $green
+		background url('../img/success.svg') calc(100% - 12px) center / 26px no-repeat
+	
+	&-searchForm
+		padding 0 10px
+		border-color rgba(142, 144, 149, 0.2)
+		border-top-right-radius 0
+		border-bottom-right-radius 0
+		font-size 14px
+		+placeholder()
+			color #BEC1C8

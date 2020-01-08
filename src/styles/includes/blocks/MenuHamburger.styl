@@ -1,0 +1,50 @@
+.MenuHamburger
+	position: relative
+	width: 22px
+	height: 16px
+	border none
+	outline none
+	background transparent
+	transform rotate(0)
+	transition .5s ease-in-out
+	cursor: pointer
+	
+	&_line
+		position: absolute
+		left: 0
+		display: block
+		width: 22px
+		height: 2px
+		border-radius 1px
+		background: $white
+		opacity: 1
+		transform rotate(0)
+		transition .25s ease-in-out
+		
+		&:nth-child(1)
+			top: 0px
+			transform-origin left center
+		
+		&:nth-child(2)
+			top: 7px
+			transform-origin left center
+		
+		&:nth-child(3)
+			top: 14px
+			transform-origin left center
+	
+	&-open
+		.MenuHamburger_line
+			&:nth-child(1)
+				top 0
+				left 2px
+				transform rotate(45deg)
+				
+			&:nth-child(2)
+				width 0%
+				opacity 0
+				
+			&:nth-child(3)
+				top 15px
+				left 2px
+				transform rotate(-45deg)

@@ -1,0 +1,209 @@
+extends /layouts/main_layout
+block vars
+	- var title = "UI Kit";
+	- var headerBg = "bg_header_contacts_page.jpg";
+block content
+	//- button(type="button").BtnBlue DEFAULT
+	//- br
+	//- button(type="button").BtnDefault DEFAULT
+
+	//- .Pagination
+	//- 	ul.Pagination_list
+	//- 		li.Pagination_item.Pagination_item-prev
+	//- 			a(href="#").Pagination_link
+	//- 				include includes/svg/SvgIco/arrow
+	//- 		li.Pagination_item
+	//- 			a(href="#").Pagination_link 1
+	//- 		li.Pagination_item
+	//- 			a(href="#").Pagination_link 2
+	//- 		li.Pagination_item
+	//- 			a(href="#").Pagination_link 3
+	//- 		li.Pagination_item.Pagination_item-dots
+	//- 		li.Pagination_item
+	//- 			a(href="#").Pagination_link 20
+	//- 		li.Pagination_item.Pagination_item-next
+	//- 			a(href="#").Pagination_link
+	//- 				include includes/svg/SvgIco/arrow
+
+	//- select.SelectSearch
+	//- 	option(value="StPeterburg1") Санкт-Петербург
+	//- 	option(value="StPeterburg2") Санкт-Петербург
+	//- 	option(value="StPeterburg3") Санкт-Петербург
+	//- 	option(value="StPeterburg4") Санкт-Петербург
+	//- 	option(value="StPeterburg5") Санкт-Петербург
+	//- 	option(value="StPeterburg6") Санкт-Петербург
+	//- 	option(value="StPeterburg7") Санкт-Петербург
+	//- 	option(value="StPeterburg8") Санкт-Петербург
+	//- 	option(value="StPeterburg9") Санкт-Петербург
+	//- 	option(value="StPeterburg10") Санкт-Петербург
+
+	//- a(href="#").Link default
+	//- a(href="#").Link focused/active
+
+	//- .Checkbox
+	//- 	input(type="checkbox", id="checkbox").Checkbox_input
+	//- 	label(for="checkbox").Checkbox_label default
+	
+	//- .DropDown
+	//- 	ul.DropDown_list
+	//- 		li.DropDown_item
+	//- 			a(href="#").DropDown_link Перечень услуг
+	//- 		li.DropDown_item
+	//- 			a(href="#").DropDown_link Стратегический консалтинг
+	//- 		li.DropDown_item
+	//- 			a(href="#").DropDown_link Продвижение объектов
+	//- 		li.DropDown_item
+	//- 			a(href="#").DropDown_link Экспертная оценка земли
+
+	//- a(href="javascript:;", data-fancybox, data-src="#GetBetterConditions").Link.PopupFormLink Получить лучшие условия
+	//- a(href="javascript:;", data-fancybox, data-src="#SendMessage").Link.PopupFormLink Отправить сообщение
+
+	//- include includes/blocks/Form
+	//- include includes/blocks/Form-sendMessage
+
+	//- a(href="#").BtnBlue.BtnBlue-large Стратегический консалтинг
+
+	//- a(href="#", title="Жилой микрорайон “Сапроново” г. Видное").ProjectCard
+	//- 	.ProjectCard_img
+	//- 		.ProportionalImage(style="background-image: url('img/product_card.png')")
+	//- 	.ProjectCard_body
+	//- 		h3.ProjectCard_title Жилой микрорайон “Сапроново” г. Видное
+
+	//- .ObjectCard
+	//- 	.ObjectCard_img
+	//- 		.ProportionalImage.ProportionalImage-objectCard(style="background-image: url('img/object_card.png')")
+	//- 	.ObjectCard_body
+	//- 		.ObjectCard_text
+	//- 			.ObjectCard_id-and-square
+	//- 				.ObjectCard_id.
+	//- 					#[span.ObjectCard_label.hidden-smPlus ID:] 210
+	//- 				.ObjectCard_square.hidden-smPlus.
+	//- 					#[span.ObjectCard_label.hidden-smPlus Площадь:] 4,76 Га
+	//- 			.ObjectCard_location Киевское шоссе, Жедочи, #[br.hidden-xs]35 км от МКАД
+	//- 			.ObjectCard_square.hidden-xs 4,76 #[span.ObjectCard_label.hidden-smPlus Га]
+	//- 			.ObjectCard_cost.
+	//- 				#[span.ObjectCard_label.hidden-smPlus Стоимость:] 119 000 000 руб
+	//- 			.ObjectCard_specialPrice.
+	//- 				#[span.ObjectCard_label.hidden-smPlus Спец. цена:] 110 000 000 руб
+	//- 		.ObjectCard_links
+	//- 			.ObjectCard_mapLinkWrap
+	//- 				a(href="#").Link.Link-blue Показать на карте
+	//- 			a(href="#").BtnDefault.BtnDefault-objectCard Получить лучшие условия
+
+	//- .Breadcrumbs
+	//- 	.Container
+	//- 		ul.Breadcrumbs_list
+	//- 			li.Breadcrumbs_item
+	//- 				a(href="#").Breadcrumbs_link Главная
+	//- 			li.Breadcrumbs_item
+	//- 				span.Breadcrumbs_itemText Контакты
+
+	//- .FilterBlock
+	//- 	form(action="#").SearchForm.FilterBlock_searchForm
+	//- 		label(for="search_text").FormLabel.FormLabel-bold.SearchForm_label Поиск
+	//- 		.SearchForm_item
+	//- 			input(type="text", name="search_text", id="search_text", placeholder="Например, дача на Волге").FormText.FormText-searchForm.SearchForm_text
+	//- 			button(type="submit").SearchForm_btn
+	//- 				include includes/svg/SvgIco/search
+	//- 	form(action="#").ObjectFilter
+	//- 		.ObjectFilter_checkboxesAndSelects
+	//- 			.ObjectFilter_item.ObjectFilter_item-checkboxes
+	//- 				label.FormLabel.FormLabel-bold.ObjectFilter_label.ObjectFilter_label-checkboxes Назначение / Строительство
+	//- 				.Checkbox.Checkbox-buildingType.ObjectFilter_checkbox
+	//- 					span.Checkbox_icon
+	//- 						include includes/svg/SvgIco/building_types/agriculture
+	//- 					input(type="checkbox", name="building_type[]" id="agriculture", value="agriculture").Checkbox_input
+	//- 					label(for="agriculture").Checkbox_label Сельское хозяйство
+	//- 				.Checkbox.Checkbox-buildingType.ObjectFilter_checkbox
+	//- 					span.Checkbox_icon
+	//- 						include includes/svg/SvgIco/building_types/individual_housing
+	//- 					input(type="checkbox", name="building_type[]" id="individual_housing", value="individual_housing").Checkbox_input
+	//- 					label(for="individual_housing").Checkbox_label Индивидуальное жилье
+	//- 				.Checkbox.Checkbox-buildingType.ObjectFilter_checkbox
+	//- 					span.Checkbox_icon
+	//- 						include includes/svg/SvgIco/building_types/apartment_house
+	//- 					input(type="checkbox", name="building_type[]" id="apartment_house", value="apartment_house").Checkbox_input
+	//- 					label(for="apartment_house").Checkbox_label Многоквартирное жилье
+	//- 				.Checkbox.Checkbox-buildingType.ObjectFilter_checkbox
+	//- 					span.Checkbox_icon
+	//- 						include includes/svg/SvgIco/building_types/commercial_or_industrial
+	//- 					input(type="checkbox", name="building_type[]" id="commercial_or_industrial", value="commercial_or_industrial").Checkbox_input
+	//- 					label(for="commercial_or_industrial").Checkbox_label Коммерческое/промышленное
+	//- 				.Checkbox.Checkbox-buildingType.ObjectFilter_checkbox
+	//- 					span.Checkbox_icon
+	//- 						include includes/svg/SvgIco/building_types/recreation_objects
+	//- 					input(type="checkbox", name="building_type[]" id="recreation_objects", value="recreation_objects").Checkbox_input
+	//- 					label(for="recreation_objects").Checkbox_label Размещение объектов рекриации
+	//- 			.ObjectFilter_selectGroup
+	//- 				.ObjectFilter_item.ObjectFilter_item-select
+	//- 					label(for="subject_rf").FormLabel.FormLabel-bold.ObjectFilter_label.ObjectFilter_label-select Субъект РФ
+	//- 					select(name="subject_rf", id="subject_rf").SelectSearch
+	//- 						option(value="StPeterburg1") Санкт-Петербург
+	//- 						option(value="StPeterburg2") Санкт-Петербург
+	//- 						option(value="StPeterburg3") Санкт-Петербург
+	//- 						option(value="StPeterburg4") Санкт-Петербург
+	//- 						option(value="StPeterburg5") Санкт-Петербург
+	//- 						option(value="StPeterburg6") Санкт-Петербург
+	//- 						option(value="StPeterburg7") Санкт-Петербург
+	//- 						option(value="StPeterburg8") Санкт-Петербург
+	//- 						option(value="StPeterburg9") Санкт-Петербург
+	//- 						option(value="StPeterburg10") Санкт-Петербург
+	//- 				.ObjectFilter_item.ObjectFilter_item-select
+	//- 					label(for="district").FormLabel.FormLabel-bold.ObjectFilter_label.ObjectFilter_label-select Район
+	//- 					select(name="district", id="district").SelectSearch
+	//- 						option(value="district1") Район 1
+	//- 						option(value="district2") Район 2
+	//- 						option(value="district3") Район 3
+	//- 						option(value="district4") Район 4
+	//- 						option(value="district5") Район 5
+	//- 						option(value="district6") Район 6
+	//- 						option(value="district7") Район 7
+	//- 						option(value="district8") Район 8
+	//- 						option(value="district9") Район 9
+	//- 						option(value="district10") Район 10
+	//- 				.ObjectFilter_item.ObjectFilter_item-select
+	//- 					label(for="highway").FormLabel.FormLabel-bold.ObjectFilter_label.ObjectFilter_label-select Шоссе
+	//- 					select(name="highway", id="highway").SelectSearch
+	//- 						option(value="highway1") Шоссе 1
+	//- 						option(value="highway2") Шоссе 2
+	//- 						option(value="highway3") Шоссе 3
+	//- 						option(value="highway4") Шоссе 4
+	//- 						option(value="highway5") Шоссе 5
+	//- 						option(value="highway6") Шоссе 6
+	//- 						option(value="highway7") Шоссе 7
+	//- 						option(value="highway8") Шоссе 8
+	//- 						option(value="highway9") Шоссе 9
+	//- 						option(value="highway10") Шоссе 10
+	//- 		.ObjectFilter_rangeSliderGroup
+	//- 			.ObjectFilter_item.ObjectFilter_item-rangeSlider
+	//- 				label.FormLabel.FormLabel-bold.ObjectFilter_label.ObjectFilter_label-range Площадь участка
+	//- 				.RangeSlider#LandArea.ObjectFilter_rangeSlider
+	//- 				.ObjectFilter_rangeValues
+	//- 					.ObjectFilter_rangeValue#LandAreaMin 12 сот.
+	//- 					.ObjectFilter_rangeValue#LandAreaMax 100 Га
+	//- 			.ObjectFilter_item.ObjectFilter_item-rangeSlider.ObjectFilter_item-areaCost
+	//- 				label.FormLabel.FormLabel-bold.ObjectFilter_label.ObjectFilter_label-range Стоимость участка, руб.
+	//- 				.RangeSlider#AreaCost.ObjectFilter_rangeSlider
+	//- 				.ObjectFilter_rangeValues
+	//- 					.ObjectFilter_rangeValue#AreaCostMin 240 000
+	//- 					.ObjectFilter_rangeValue#AreaCostMax 2 000 000 000
+	//- 		.ObjectFilter_actions
+	//- 			.ObjectFilter_buttons
+	//- 				button(type="submit").BtnBlue.BtnBlue-block.ObjectFilter_searchBtn Найти
+	//- 				button(type="reset").BtnDefault.BtnDefault-block.ObjectFilter_clearBtn.hidden-xs.hidden-md Очистить фильтр
+	//- 			.ObjectFilter_clearFilter.hidden-sm
+	//- 				a(href="#").Link Очистить фильтр
+	//- 			.ObjectFilter_searchResults
+	//- 				a(href="#").Link Ссылка на эти результаты поиска
+
+	//- input(type="checkbox", name="display_as_list", value="1").Switch
+
+	//- .ObjectDisplayType
+	//- 	a(href="#").ObjectDisplayType_label.ObjectDisplayType_label-active#ObjectDisplayAsList Списком
+	//- 	input(type="checkbox", name="display_on_map", value="1").Switch.ObjectDisplayType_switch
+	//- 	a(href="#").ObjectDisplayType_label#ObjectDisplayOnMap На карте
+
+	//- h1.PageTitle Контакты
+
+block page_bottom
+	script(src="/js/blank.js")

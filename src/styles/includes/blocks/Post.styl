@@ -1,0 +1,27 @@
+.Post
+	&_title
+		margin-bottom 20px
+		font-size 20px
+		line-height 1
+		
+		@media $smPlus
+			margin-bottom 33px
+			font-size 30px
+			line-height 0.67
+		
+		@media $mdPlus
+			margin-bottom 30px
+	
+	&_content
+		font-size 16px
+		line-height 1.63
+		
+		p, li
+			&:not(:last-child)
+				margin-bottom 20px
+				
+				@media $smPlus
+					margin-bottom 30px
+				
+				@media $mdPlus
+					margin-bottom 32px

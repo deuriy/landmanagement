@@ -1,0 +1,21 @@
+.Breadcrumbs
+	position relative
+	z-index 1
+	box-shadow 0 10px 20px 0 rgba(48, 56, 92, 0.1)
+	background $white
+	
+	&_list
+		display flex
+		align-items center
+		height 63px
+	
+	&_item
+		font-size 14px
+		
+		&:not(:last-child):after
+			content "/"
+			margin-right 3px
+			margin-left 3px
+	
+	&_link
+		color $grey

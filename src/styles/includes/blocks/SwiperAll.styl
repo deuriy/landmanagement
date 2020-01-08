@@ -1,0 +1,59 @@
+.SwiperAll
+	position relative
+	
+	&_prev, &_next
+		position absolute
+		z-index 1
+		top -35px
+		bottom 0
+		margin auto
+		height 29px
+	
+	&_prev
+		left -58px
+	
+	&_next
+		right -58px
+	
+	&-buildingTypes
+		@media $lgPlus
+			max-width 1100px
+			margin-right auto
+			margin-left auto
+			
+		.SwiperAll_prev, .SwiperAll_next
+			top 60px
+			margin 0
+			
+			@media $smPlus
+				top 56px
+			
+		.SwiperAll_prev
+			left 5px
+			
+			@media $smPlus
+				left 12px
+		
+		.SwiperAll_next
+			right 5px
+			
+			@media $smPlus
+				right 12px
+	
+	&-offerBlock
+		@media $lgPlus
+			max-width 1290px
+			margin-right auto
+			margin-left auto
+		
+		.SwiperAll_prev, .SwiperAll_next
+			top -38px
+			color rgba(54, 55, 56, .2)
+		
+		.SwiperAll_prev
+			@media $lgPlus
+				left 14px
+		
+		.SwiperAll_next
+			@media $lgPlus
+				right 13px

@@ -1,0 +1,28 @@
+.SwiperArrow
+	width 18px
+	padding 0
+	border none
+	outline none
+	background transparent
+	color $white
+	@extend .transition
+	
+	&:hover
+		@media $mdPlus
+			color $blue
+	
+	&-lightgrey
+		color rgba(54, 55, 56, 0.2)
+	
+	&-objectPhotos
+		height 100%
+		background rgba(85, 89, 97, 0.4)
+		
+		& > .SvgIco
+			width 6px
+			
+			@media $smPlus
+				width 10px
+		
+		@media $smPlus
+			width 40px

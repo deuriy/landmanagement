@@ -1,0 +1,91 @@
+.SearchResults
+	padding-top 32px
+	
+	@media $smPlus
+		width 748px
+	
+	@media $lgPlus
+		width auto
+	
+	&_header
+		@media $smPlus
+			display flex
+			justify-content space-between
+			align-items center
+			margin-bottom 19px
+			padding 0 30px 0 29px
+		
+		@media $lgPlus
+			flex-direction column
+			align-items flex-start
+			margin-bottom 32px
+			padding 0
+	
+	&_sorting
+		@media $smPlus
+			display flex
+			justify-content flex-end
+			margin-bottom 12px
+			padding-right 42px
+		
+		@media $lgPlus
+			padding-right 34px
+	
+	&_title
+		margin-bottom 20px
+		color $blue
+		font-weight bold
+		font-size 16px
+		line-height 1.69
+		text-align center
+		
+		@media $smPlus
+			margin-bottom 0
+		
+		@media $lgPlus
+			margin-bottom 19px
+	
+	&_objectDisplayType
+		margin-bottom 17px
+		
+		@media $smPlus
+			margin-bottom 0
+	
+	&_item
+		margin-right auto
+		margin-left auto
+		
+		@media $lgPlus
+			margin-right 0
+			margin-left 0
+		
+		&:not(:last-child)
+			margin-bottom 9px
+			
+			@media $smPlus
+				margin-bottom 18px
+	
+	&_footer
+		padding-top 35px
+		padding-bottom 54px
+		text-align center
+		
+		@media $smPlus
+			padding-top 45px
+	
+	&_moreLink
+		display inline-block
+		margin-bottom 52px
+		
+		@media $lgPlus
+			margin-bottom 47px
+	
+	&_map
+		margin-top 31px
+		
+		@media $smPlus
+			margin 29px -10px 0
+		
+		@media $lgPlus
+			margin-right 0
+			margin-left 0

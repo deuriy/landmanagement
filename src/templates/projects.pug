@@ -1,0 +1,50 @@
+extends /layouts/main_layout
+block vars
+	- var title = "Проекты";
+	- var headerBg = "bg_header_project_page.jpg";
+	- var headerClasses = "Header-projectPage";
+block content
+	.Breadcrumbs.hidden-xs
+		.Container
+			ul.Breadcrumbs_list
+				li.Breadcrumbs_item
+					a(href="/").Breadcrumbs_link Главная
+				li.Breadcrumbs_item
+					span.Breadcrumbs_itemText #{title}
+	.ProjectList
+		.Container.ProjectList_container
+			a(href="/project2.html", title="Жилой микрорайон “Сапроново” г. Видное").ProjectCard.ProjectList_item
+				.ProjectCard_img
+					.ProportionalImage(style="background-image: url('img/product_card.png')")
+				.ProjectCard_body
+					h3.ProjectCard_title Жилой микрорайон “Сапроново” г. Видное
+			a(href="/project3.html", title="Земельные участки г. Москва, Новомосковский АО, Рязановское поселение").ProjectCard.ProjectList_item
+				.ProjectCard_img
+					.ProportionalImage(style="background-image: url('img/product_card.png')")
+				.ProjectCard_body
+					h3.ProjectCard_title Земельные участки г. Москва, Новомосковский АО, Рязановское поселение
+			a(href="/project.html", title="Индустриальный Парк М4").ProjectCard.ProjectList_item
+				.ProjectCard_img
+					.ProportionalImage(style="background-image: url('img/product_card.png')")
+				.ProjectCard_body
+					h3.ProjectCard_title Индустриальный Парк М4
+	.PageDescription
+		.Container.PageDescription_container
+			.PageDescription_text.
+				Компания #[span.Semibold Land Management] предлагает владельцам будущего бизнеса принять участие у реализации инвестиционных проектов в Подмосковье. Мы реализуем земли промышленного назначения, а также сельскохозяйственного, жилищного, рекреационного. В число наших услуг входит оказание полного спектра консультаций, юридическое сопровождение совершаемых сделок, представительство интересов клиентов в органах государственной власти. #[span.hidden-smPlus Мы предлагаем наиболее перспективные земли (участок) для промышленности в различных районах Московской области. В числе наших предложений: два инвестиционных проекта – индустриальный парк «Петровское», расположенный по Киевскому шоссе, и индустриальный парк «М4» находящийся по Каширскому шоссе]
+	.ProjectsDescription.hidden-smMinus
+		.Container
+			.ListBlock.ProjectsDescription_item
+				h2.ListBlock_title Земельные участки промышленного назначения в рамках инвестиционных проектов
+				ul.List.ListBlock_list
+					li #[strong «Индустриальный парк М4»] - это зона площадью 81 гектар, полностью подготовленная для строительства. Данный земельный участок промышленного назначения включает в себя разнообразные объекты общей инфраструктуры, в частности, стоянки и парковки для грузовых автомобилей фур, инженерные сети (газоснабжение, электричество), узел водозабора и комплекс очистных сооружений.
+					li #[strong Индустриальный парк «Петровское»] (участки проекта полностью реализованы), находящийся в деревне Селятино, расположился на территории 21 гектар. В его состав входят 11 участков – это земля, на которых могут быть расположены, по желанию владельца, та или иная промышленность, офисные, торговые либо складские объекты. Парк поделен на участки площадью от 1,52 до 2,17 гектаров. Как показывает практика, на данный момент именно такая площадь является оптимальной для застройщиков, позволяя им наиболее оптимально располагать и развивать свой бизнес.
+			.ListBlock.ProjectsDescription_item
+				h2.ListBlock_title Комплексная застройка «Микрорайон Сапроново»
+				ul.List.ListBlock_list
+					li Продажа земельных участков под строительство среднеэтажного и многоэтажного жилья в Ленинском районе Подмосковья, г. Видное.  Участки в собственности, общая площадь от 3 до 50 гектаров, удаленность от МКАД всего 7 км.
+			.ListBlock.ProjectsDescription_item
+				h2.ListBlock_title.ListBlock_title-largeIndent Земельные участки в г. Москва, Новомосковский АО, Рязановское поселение
+				ul.List.ListBlock_list
+					li Большинство предлагаемых участков предполагается под строительство много- и среднеэтажного жилья, а также для промышленно-коммунального назначения. На часть участков, предназначенных для коммерческой, производственной и социальной инфраструктуры открыты ПЗЗ, что позволяет получить ГПЗУ и изменить вид разрешенного использования.
+block page_bottom

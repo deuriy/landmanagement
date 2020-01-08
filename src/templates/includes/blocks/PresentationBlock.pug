@@ -1,0 +1,10 @@
+.PresentationBlock.Project_presentationBlock
+	a(href="#").BtnDefault.BtnDefault-download.PresentationBlock_downloadBtn Скачать презентацию
+		include ../svg/SvgIco/download
+	form(action="#").SendPresentation.PresentationBlock_form
+		h2.SendPresentation_title Отправить презентацию на почту
+		.SendPresentation_item
+			input(type="email", name="email", placeholder="Электронная почта").FormText.SendPresentation_input
+			button(type="submit").SendPresentation_btn
+				include ../svg/SvgIco/arrow_left
+		.SendPresentation_note Отправляя форму, вы подтверждаете своё #[br]#[a(href="#").SendPresentation_link согласие на обработку персональных данных]

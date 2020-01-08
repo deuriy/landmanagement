@@ -1,0 +1,76 @@
+.Checkbox
+	position relative
+	display block
+	
+	&:hover
+		.Checkbox_label:before
+			border-color $blue
+	
+	&_input
+		position absolute
+		clip rect(0, 0, 0, 0)
+		
+		&:checked ~ .Checkbox_label:before
+			border-color $blue
+			background-color $blue
+			background-image url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTExIDFMNC4xMjUgOC41NjMgMSA1LjEyNCIvPjwvc3ZnPg==')
+	
+	&_label
+		display flex
+		align-items center
+		line-height 1.47
+		color $grey
+		
+		&:before
+			content ""
+			flex-shrink 0
+			width 18px
+			height 18px
+			margin-right 12px
+			border 1px solid #cdcfd3
+			border-radius 2px
+			background-color $white
+			background-position center center
+			background-repeat no-repeat
+			@extend .transition
+	
+	&-agreement
+		.Checkbox_label
+			font-size 13px
+			color rgba(54, 55, 56, .6)
+			
+			&:before
+				margin-right 24px
+				
+				@media $mdPlus
+					margin-right 12px
+	
+	&-buildingType
+		display flex
+		
+		.Checkbox_icon
+			width 16px
+			margin-right 10px
+			color $blue
+			text-align center
+			
+			@media $lgPlus
+				margin-right 21px
+		
+		.Checkbox_input
+			&:checked ~ .Checkbox_label
+				color $dark
+				
+		.Checkbox_label
+			flex-grow 1
+			justify-content space-between
+			font-size 14px
+			line-height 1.93
+			@extend .transition
+			
+			&:before
+				order 1
+				margin-right 0
+			
+			&:hover
+				color $dark

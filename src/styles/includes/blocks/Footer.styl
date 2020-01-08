@@ -1,0 +1,99 @@
+.Footer
+	background $dark2
+	
+	@media $smMinus
+		text-align center
+	
+	&_top
+		padding-top 26px
+		padding-bottom 27px
+		
+		@media $smPlus
+			display flex
+			justify-content space-between
+			padding-top 31px
+			padding-bottom 29px
+		
+		@media $lgPlus
+			flex-wrap wrap
+			justify-content flex-start
+			min-height 420px
+			padding-top 65px
+	
+	&_col
+		@media $lgPlus
+			padding-right 40px
+		
+			&-first
+				flex 0 0 246px
+		
+			&-second
+				flex 0 0 307px
+				padding-right 57px
+		
+			&-third
+				flex 0 0 340px
+				padding-right 72px
+			
+			&-fourth
+				flex 0 0 276px
+				padding-right 0
+			
+			&-fifth
+				margin-top -108px
+				flex 0 0 276px
+	
+	&_aboutCompany
+		@media $lgPlus
+			margin-bottom 79px
+	
+	&_contacts
+		@media print
+			display none
+			
+		@media $smPlus
+			margin-top 3px
+	
+	&_bottom
+		padding-top 24px
+		padding-bottom 30px
+		border-top 1px solid #7e7e7e
+		
+		@media print
+			display none
+		
+		@media $xs
+			margin-right -15px
+			margin-left -15px
+		
+		@media $smPlus
+			display flex
+			justify-content space-between
+			align-items center
+	
+	&_socIcons
+		margin-bottom 32px
+		
+		@media $smPlus
+			order 3
+			margin-top -7px
+			margin-right -12px
+			margin-bottom 0
+	
+	&_copyright
+		margin-bottom 35px
+		color #7E7E7E
+		
+		@media $smPlus
+			margin-bottom 0
+	
+	&_companyLogo
+		color #C4C4C4
+		@extend .transition
+		
+		&:hover
+			color $white
+		
+		@media $smPlus
+			margin-right 52px
+			margin-bottom -4px
